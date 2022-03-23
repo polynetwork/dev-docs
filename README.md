@@ -1,3 +1,50 @@
+##Deployment on Ubuntu
+
+###Install dependencies
+
+Install Nodejs
+````shell
+sudo apt install npm
+sudo npm install -g n
+sudo n v12.16.3
+sudo apt-get update
+sudo apt-get  install  build-essential
+````
+
+Install Gitbook
+````shell
+sudo npm install gitbook-cli -g
+sudo gitbook -V
+````
+
+###Build From Source
+````
+gitbook build
+````
+###Setup for Nginx
+````
+server {
+listen       80;
+server_name  dev-docs.poly.network;
+access_log  /data/install/nginx/logs/dev-docs/access.log  main;
+
+        location / {
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header REMOTE-HOST $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+            try_files $uri $uri/ /index.html;
+            root   /data/install/dev-docs/_book;
+            index  index.html index.htm;
+        }
+
+    }
+
+````
+
+##OutLine
+
 ### Introduction
 * [About Poly Network](introduction.md)
 * [Guidelines for Reading](guideline.md)
