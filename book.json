@@ -1,0 +1,150 @@
+{
+  "title": "",
+  "author": "PolyNetwork",
+  "structure": {
+    "readme": "introduction.md",
+    "summary": "SUMMARY.md",
+    "glossary": "GLOSSARY.md"
+  },
+  "theme-default": {
+    "showLevel": true
+  },
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "plugins": [
+    "sectionx",
+    "-sharing",
+    "sharing-plus",
+    "theme-hqbook",
+    "flexible-linkcard",
+    "emphasize",
+    "flexible-alerts",
+    "lightbox",
+    "alerts",
+    "expandable-chapters",
+    "custom-favicon",
+    "tbfed-pagefooter",
+    "hide-element",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "code",
+    "heading-anchors",
+    "-highlight",
+    "prism",
+    "prism-themes"
+  ],
+  "flexible-alerts": {
+    "style": "callout",
+    "comment": {
+      "label": "Comment",
+      "icon": "fa fa-comments",
+      "className": "info"
+    }
+  },
+  "lightbox": {
+    "includeJQuery": false,
+    "sameUuid": true,
+    "options": {
+      "resizeDuration": 500,
+      "wrapAround": false
+    }
+  },
+  "variables": {
+    "themeHqbook": {
+      "nav": [
+        {
+          "url": "https://poly.network/",
+          "target": "_blank",
+          "name": "Home"
+        },
+        {
+          "url": "https://bridge.poly.network/",
+          "target": "_blank",
+          "name": "Poly Bridge"
+        },
+        {
+          "url": "https://explorer.poly.network/",
+          "target": "_blank",
+          "name": "Poly Explorer"
+        }
+      ]
+    }
+  },
+  "pluginsConfig": {
+    "fontsettings": {
+      "theme": "night",
+      "family": "serif",
+      "size": 2
+    },
+    "sectionx": {
+      "tag": "b"
+    },
+    "theme-hqbook": {
+      "logo": "/resources/logo.png",
+      "favicon": "/resources/favicon.ico",
+      "search-placeholder": "Search...",
+      "copyButtons": false,
+      "copyLines": true,
+      "dragSplitter": true,
+      "hide-elements": [
+        ".summary .gitbook-link"
+      ],
+      "flexible-linkcard": {
+        "title": "flexible-linkcard",
+        "hrefUrl": "https://poly.network/#/",
+        "target": "_blank",
+        "imgSrc": "/resources/logo.png",
+        "imgClass": "rect"
+      }
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy 2022 PolyNetwork.",
+      "modify_label": "Last modification date：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "favicon": "resources/favicon.ico",
+    "hide-element": {
+      "elements": [
+        ".gitbook-link"
+      ]
+    },
+    "links": {
+      "sidebar": {
+        "Blog": "https://blog.csdn.net/ming_97y",
+        "Github": "https://github.com/jiangminggithub"
+      }
+    },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-okaidia.css"
+      ]
+    },
+    "sharing": {
+      "twitter": true,
+      "douban": false,
+      "github": true,
+      "discord": true,
+      "medium": true,
+      "telegram": true,
+      "youtube": true,
+      "email": true,
+      "facebook": false,
+      "google": false,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": false,
+      "linkedin": false,
+      "messenger": false,
+      "pocket": false,
+      "qq": false,
+      "qzone": false,
+      "stumbleupon": false,
+      "viber": false,
+      "vk": false,
+      "weibo": false,
+      "whatsapp": false
+    }
+  }
+}
