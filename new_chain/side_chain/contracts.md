@@ -1,20 +1,20 @@
 <h1 align="center">Develop for New Chain</h1>
 
-The development of a new chain mainly involves developing cross-chain modules. Here, the cross-chain module works as a set of **smart contracts**. 
+The development of a new chain mainly focuses on developing cross-chain modules. Here, the cross-chain module works as a set of **smart contracts**. 
 
 In some cases, it can also work as a native blockchain module. 
-To help you develop it, here we offer examples in Solidity for each main method. 
+To help you develop it, we offer examples in Solidity for each of the main methods. 
 You may refer to the complete [code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager) of these contracts.
 
 > [!Note|style:flat|label:Notice]
-> If the chain integrated to Poly Network supports EVM, you could freely use our cross-chain contracts as templates. If not, you may need to develop your contracts that contain the main features as shown in the following guidelines. 
+> If the chain integrated to Poly Network supports EVM, you can freely use our cross-chain contracts as templates. If not, you may need to develop your own contracts containing the main features, as shown in the following guidelines. 
 
 ## 1. Introduction to Cross-chain Contracts
-In this part, we sort the contracts into **data**, **logic**, and **proxy** contracts to complete the cross-chain contracts. You could either follow the methods listed below or choose other ways for your project.
+In this part, we sort the contracts into **data**, **logic**, and **proxy** contracts to complete the cross-chain contracts. You can choose to follow the methods listed below or find other ways for your project.
 - List of contracts: 
-  - [Cross Chain Manager Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol): On the source chain, it creates the cross-chain transactions transferred to the Poly. The target chain verifies the legitimacy of transactions and executes the method on the target business logic contract. It may be referred to as a CCM contract in the following context.
-  - [Cross Chain Data Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol): It serves as a database of cross-chain transactions. It may be referred to as a CCD contract in the following context.
-  - [Cross Chain Manager Proxy Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/upgrade/EthCrossChainManagerProxy.sol): It serves as a proxy of the CCM contract. When there is any need to upgrade the CCM contract, it would pause the old CCM contract and set the new CCM contract to the CCD contract.
+  - [Cross Chain Manager Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol): On the source chain, it creates the cross-chain transactions to Poly. The target chain verifies the legitimacy of transactions and executes the method on the target business logic contract. From here onwards this is referred to as a CCM contract.
+  - [Cross Chain Data Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol): It serves as a database of cross-chain transactions. From here onwards this is referred to as a CCD contract.
+  - [Cross Chain Manager Proxy Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/upgrade/EthCrossChainManagerProxy.sol): It serves as a proxy for the CCM contract. When there isn't any need to upgrade the CCM contract, it pauses the old CCM contract and sets the new CCM contract as the the CCD contract.
   - Business Logic Contract: It executes the business logic of cross-chain projects. It interacts with users and the CCM contract both on the source and target chains. We also offer the [guidelines](../../new_product/integrate_contracts/Customizing_Business_Logic_Contract.md) for developing a Business Logic Contract.
 - Interactions among contracts
 
@@ -22,11 +22,11 @@ In this part, we sort the contracts into **data**, **logic**, and **proxy** cont
 
 ## 2. Developing CCM Contracts
 
-Before customizing your CCM, you need to implement the four main features. 
+Before customizing your CCM, you need to implement the following four features. 
 
 ### Step1. Synchronizing genesis block header
 
-This step is meant to implement the methods of synchronizing the genesis block header of the Poly chain to the CCM contract. 
+This step is a method for implementing the synchronizing of the genesis block header of the Poly chain with the CCM contract. 
 
 #### Example:
 
@@ -60,12 +60,12 @@ function initGenesisBlock(bytes memory rawHeader, bytes memory pubKeyList) whenN
 
 - This method should be called initially and can **only** be called **once**. For the input data `rawHeader`, the `nextbookkeeper` can not be empty.
 - Firstly, this function checks the **public key** of the current epoch to make sure that the CCM contract is uninitialized.  
-- Then we will parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, we could verify the validity of the signature.
-- After verifying the signature, we could record the current epoch start height and the public keys by storing them in the address format. And then emit the event `InitGenesisBlockEvent`.   
+- Next, the raw header is parsed to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, the validity of the signature can be verified.
+- After verifying the signature, we can record the current epoch start height and the public keys by storing them in the address format. And then emit the event `InitGenesisBlockEvent`.   
 
 ### Step2. Changing consensus validator
 
-This step is meant to implement the methods of changing the Poly Chain consensus validator, which is called `BookKeeper` in the code. 
+This step is a method for implementing changes to the Poly Chain consensus validator, which is called `BookKeeper` in the code. 
 
 #### Example:
 
@@ -108,14 +108,14 @@ function changeBookKeeper(bytes memory rawHeader, bytes memory pubKeyList, bytes
 }
 ```
 
-- Firstly, you need to make sure the `rawHeader.height` is higher than recorded current epoch starts height. 
+- Firstly, you need to make sure the `rawHeader.height` is higher than the recorded current epoch starts height. 
 - Then you need to ensure that the `rawHeader` is the key header, including info of switching consensus peers by containing a non-empty `nextBookKeeper` field.
-- Analogous to `initGenesisBlock()`, we also need to parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, we could verify the validity of the signature.
-- After verifying the signature, we could record the current epoch start height and current epoch consensus peers bookkeepers by storing them in the address format. And then emit the event `ChangeBookKeeperEvent`.   
+- Analogous to `initGenesisBlock()`, we also need to parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, we can verify the validity of the signature.
+- After verifying the signature, we can record the current epoch start height and current epoch consensus peers bookkeepers by storing them in the address format. And then emit the event `ChangeBookKeeperEvent`.   
 
 ### Step3. Pushing transactions
 
-This step is meant to implement the methods of pushing the serialized cross-chain transaction information to the Poly chain.
+This step is a method for pushing the serialized cross-chain transaction information to the Poly chain.
 
 #### Example:
 
@@ -161,12 +161,12 @@ function crossChain(uint64 toChainId, bytes calldata toContract, bytes calldata 
 
 - Only the contracts in the **whitelist** can call this method.
 - When a cross-chain function is carried out interact, it creates cross-chain transactions invoked by service contracts the logic cont.
-- This method constructs the `rawParam`, which contains **transaction hash**, `msg.sender`, **target chain ID**, **business logic contract** to be invoked on target chain, the **target method** to be invoked, and the **serialized transaction data** which has been already constructed in the business logic contract. 
-- Then put the hash of `rawParam` into storage, proving the existence of the transaction.
+- This method constructs the `rawParam`, which contains **transaction hash**, `msg.sender`, **target chain ID**, **business logic contract** to be invoked on the target chain, the **target method** to be invoked, and the **serialized transaction data** which has been already constructed in the business logic contract. 
+- Then the hash of `rawParam` is put into storage, proving the existence of the transaction.
 
 ### Step4. Verifying & executing
 
-This step is meant to implement the methods of verifying the block header and Merkle proof. If passing the verification, the transaction could be executed on the target chain.
+This step is meant to implement the methods of verifying the block header and Merkle proof. If this verification is passed, the transaction can be executed on the target chain.
 
 #### Example:
 
@@ -262,14 +262,14 @@ function _executeCrossChainTx(address _toContract, bytes memory _method, bytes m
 }
 ````
 
-- The relayer should invoke this method. In some cases, users could invoke this method by themselves if they get the valid block information from Poly. 
+- The relayer should invoke this method. In some circumstances, users can invoke this method by themselves if they get the valid block information from Poly. 
 - This method fetches and processes **cross-chain transactions**, finds the **Merkle root of a transaction** based on the block height (in the block header), and verifies the **transaction's legitimacy** using the transaction parameters.
 - After verifying the Poly chain block header and proof, you still need to check if the parameters `toContract` and `toMerkleValue.makeTxParam.method` have been listed in whitelists.
-- Then it will invoke the business logic contract deployed on the target chain. Invoking will be processed through the internal method `_executeCrossChainTx()`: 
+- The business logic contract deployed on the target chain is then invoked, which processes the business logic contract through the internal method `_executeCrossChainTx()`: 
   - This method is meant to invoke the target contract and trigger the execution of cross-chain tx on the target chain. 
-  - Firstly, you need to ensure that the target contract is waiting to be invoked a contract rather than a standard account address. 
+  - Firstly, you need to ensure that the target contract is waiting to invoke a contract rather than a standard account address. 
   - Then construct a target business logic contract method:  you need to `encodePacked` the `_method` and the input data format `"(bytes,bytes,uint64)"`. 
-  - Then it would `keccak256` the encoded string, using `bytes4` to take the first four bytes of the call data for a function call specifies the function to be called. 
+  - Then it would `keccak256` the encoded string, using `bytes4` to take the first four bytes of the call data for a function call that specifies what function to call. 
   - Parameter `_method` is from the `toMerkleValue`, which is parsed from `proof`. And the input parameters format is restricted as (bytes `_args`, bytes `_fromContractAddr`, uint64 `_fromChainId`). These two parts are encodePacked as a method call.  
 - After calling the method, you need to check the return value. Only if the return value is true will the whole cross-chain transaction be executed successfully. 
 
