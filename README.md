@@ -1,6 +1,6 @@
 ##Deployment on Ubuntu
 
-###Install dependencies
+### Install dependencies
 
 Install Nodejs
 ````shell
@@ -17,11 +17,11 @@ sudo npm install gitbook-cli -g
 sudo gitbook -V
 ````
 
-###Build From Source
+### Build From Source
 ````
 gitbook build
 ````
-###Setup for Nginx
+### Setup for Nginx
 ````
 server {
 listen       80;
@@ -43,7 +43,7 @@ access_log  /data/install/nginx/logs/dev-docs/access.log  main;
 
 ````
 
-##OutLine
+## OutLine
 
 ### Introduction
 * [About Poly Network](introduction.md)
