@@ -13,6 +13,7 @@
     "website": "styles/website.css"
   },
   "plugins": [
+    "edit-link-plus",
     "sectionx",
     "-sharing",
     "sharing-plus",
@@ -73,6 +74,9 @@
     }
   },
   "pluginsConfig": {
+    "edit-link-plus": {
+      "base": "https://github.com/polynetwork/dev-docs/edit/main"
+    },
     "fontsettings": {
       "theme": "night",
       "family": "serif",
