@@ -2,13 +2,13 @@
 
 Similar to any other cross-chain service, the accession to Poly cross-chain ecosystem will vary from section to section depending on your specific needs. 
 
-Here we presuppose four major goals and provide corresponding tutorials for you to realize your goals. You can either click the quick guide below directly or follow the menu in the navigation. 
+Here we presuppose four major functions and provide corresponding tutorials for you. You can either click the quick buttons on the map or follow the menu in the navigation.
 
 <div align=center><img src="resources/reading_guideline.png" alt=""/></div>
 
-## Add New Chains
+## Integrate New Chains
 Please read this section if you want to connect your chain to Poly:
-- [Connect New Chains](new_chain/readme.md)
+- [Integrate New Chains](new_chain/readme.md)
 
 ## Build New Bridges
 Please read this section if you want to build a bridge using Poly Bridge sdk:
