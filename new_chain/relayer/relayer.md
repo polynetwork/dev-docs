@@ -56,8 +56,8 @@ If you choose to develop based on Poly-Relayer, please follow the listed steps.
 
 ### Step1. Prerequisites
 The [Poly-Relayer](https://github.com/polynetwork/poly-relayer) project is based on the [bridge-common](https://github.com/polynetwork/bridge-common) library. So you need to:
- - Add chain ID in the `bridge-common` project [here](https://github.com/polynetwork/bridge-common/base).
- - Add chain client SDK [here](https://github.com/polynetwork/bridge-common/tree/main/chains) for common usage.
+ - Add chain ID in the `bridge-common` project [here](https://github.com/polynetwork/bridge-common/tree/main/base).
+ - Add chain client SDK [here](https://github.com/polynetwork/bridge-common/treemain/chains) for common usage.
  - Add chain wallet [here](https://github.com/polynetwork/bridge-common/tree/main/wallet) for common usage.
 
 ### Step2. Interface implementation
