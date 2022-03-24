@@ -160,7 +160,7 @@ function crossChain(uint64 toChainId, bytes calldata toContract, bytes calldata 
 ````
 
 - Only the contracts in the **whitelist** can call this method.
-- When a cross-chain function is carried out interact, it creates cross-chain transactions invoked by service contracts the logic cont.
+- It creates cross chain transactions, invoked by service contracts when a cross chain function is carried out in the logic contract.
 - This method constructs the `rawParam`, which contains **transaction hash**, `msg.sender`, **target chain ID**, **business logic contract** to be invoked on target chain, the **target method** to be invoked, and the **serialized transaction data** which has been already constructed in the business logic contract. 
 - Then put the hash of `rawParam` into storage, proving the existence of the transaction.
 
