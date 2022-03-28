@@ -1,18 +1,18 @@
 <h1 align="center">NFT Transaction</h1>
 
-This is the user manual for NFT transactions on a personal computer.
-Here are five steps listed to complete the cross-chain transaction on [Poly Bridge](https://bridge.poly.network/).
-We take the NFT transaction between Bytom and BSC on Poly Bridge as an example for your better understanding.
+This is the user manual for NFT transactions.
+List below are the five steps for completing a cross-chain transaction on [Poly Bridge](https://bridge.poly.network/).
+As an example, we use an NFT transaction between Bytom and BSC on Poly Bridge.
 
 
-At the very beginning, make sure you have entered [NFT Asset](https://bridge.poly.network/testnet/nft) of Poly Bridge and seen the page as below:
+To start, make sure you have entered [NFT Asset](https://bridge.poly.network/testnet/nft) of Poly Bridge and reach the page below:
 
 <img alt="img.png" src="img.png"/> 
 
-You can start your transaction journey on this page now!
+You can start your transaction journey now from this page!
 
 ### Step 1. Wallet connection on source chain
-Firstly, you should **connect your wallet** according to your needs, e.g., Bytom on MetaMask, by following the three steps shown below:
+You should **Connect your wallet** according to your needs, e.g., Bytom on MetaMask, by following the three steps shown below:
 
 <img alt="img_1.png" src="img_1.png"/>
 
@@ -25,11 +25,11 @@ Make sure your wallet has switched to the **same network** as the chain you sele
 <img alt="img_3.png" src="img_3.png"/>
 
 > [!Note|style:flat|label:Notice]
-**All existing NFT assets** will be shown before your wallet is connected or switched to the appropriate chain, as shown in this figure.
+**All existing NFT assets** will be displayed before your wallet is connected or switched to the appropriate chain, as shown in the figure below.
 
 <img alt="img_4.png" src="img_4.png"/>
 
-And a window will pop up to suggest you **connect your wallet** to this chain when you click any NFT assets on it, 
+And a window will pop up suggesting you **connect your wallet** to this chain when you click any NFT assets on it, 
 as shown here: 
 
 <img alt="img_5.png" src="img_5.png"/>
@@ -57,7 +57,7 @@ Confirm the core information, including the **two chains** and **transaction fee
 <img alt="img_11.png" src="img_11.png"/>
 
 > [!Note|style:flat|label:Notice]
-> The **Fee** collected by Poly shown on this page is used to cover the transaction fee on the target chain.
+> The **Fee** collected by Poly shown on this page, is used to cover the transaction fee on the target chain.
 
 
 
@@ -68,7 +68,7 @@ Wait for several minutes, and you can check your transaction in **History**.
 
 <img alt="img_13.png" src="img_13.png"/>
 
-Congratulations! Till now, you've completed your NFT transaction, and you can continue your cross-chain journey!
+Congratulations! You've completed your NFT transaction and can continue your cross-chain journey!
 
 
 
