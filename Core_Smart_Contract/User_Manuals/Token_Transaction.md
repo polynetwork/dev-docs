@@ -20,7 +20,7 @@ Select the target network, which is the network you are sending the tokens to, i
 <img alt="img_17.png" src="img_17.png"/>
 
 > [!Note|style:flat|label:Notice]
-> The optional network shown in this figure are the network types supported by the Metis token. Please choose your network in accordance to the token you are transferring.
+> The optional network shown in this figure are the network types offered by the Metis token. Please choose your network in accordance to the token you are transferring.
 
 The following figure shows that Metis token will be sent from the Metis network to the BSC network.
 <img alt="img_18.png" src="img_18.png"/>
@@ -61,7 +61,7 @@ Once you have verified that the transaction information is correct，you can cli
 
 > [!Note|style:flat|label:Notice]
 > If this is your first swap, an approval operation is required prior to transaction submission. 
-> Approve Infinity or not depends on your actual situation.
+> You can choose to 'approve infinitely' which will not require you to approve further transaction submissions.
 
 ### Step 5. Transaction checking
 
