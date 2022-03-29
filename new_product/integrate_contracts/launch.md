@@ -30,27 +30,26 @@ Analyze contract issues based on the steps the transaction reached:
 - The transaction hasn't been completed on the target chain:
     - Call the API `getmanualtxdata` with Poly chain hash (the second transaction hash).
 
-   API
+  API
     ```
     Testnet: https://bridge.poly.network/testnet/v1/getmanualtxdata
     Mainnet: https://bridge.poly.network/v1/getmanualtxdata
     ```
-   Parameter
-   ```
-  /* @SrcChainId:    source chain id
-   * @SwapTokenHash: the hash of the cross-chain token on the source chain
-   * @Hash: The token hash used to charge fees
-   * @DstChainId: target chain id
+  Parameter
+  ```
+  /* @Polyhash: the transaction hash in Poly
    */
   ```
+  
   Example Request
   ```bash
   curl --location --request POST 'https://bridge.poly.network/testnet/v1/getmanualtxdata' \
   --header 'Content-Type: application/json' \
   --data-raw '{
-    "polyhash": "",
+      "polyhash": "",
   }'
   ```
+  
   Example Response
   ```json
   {
