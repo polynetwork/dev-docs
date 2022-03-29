@@ -58,7 +58,7 @@ Now, you should complete a method to invoke the cross-chain function in the CCM.
 function crossChain (uint64 toChainId, bytes calldata toContract, bytes calldata method, bytes calldata txData) whenNotPaused external returns (bool)
 ````
 
-- The `rawParam`, which contains **transaction hash**, `msg.sender`, **target chain ID**, **business logic contract** on target chain, the **target method** to be invoked, and the **serialized transaction data** that has already been constructed in the business logic contract, will . 
+- The `rawParam`, which contains **transaction hash**, `msg.sender`, **target chain ID**, **business logic contract** on target chain, the **target method** to be invoked, and the **serialized transaction data** that has already been constructed in the business logic contract, should be called to request a transaction. 
 - Then put the hash of `rawParam` into storage to prove the cross-chain transaction.
 
 #### Example:
@@ -100,13 +100,12 @@ function lock(address fromAssetHash, uint64 toChainId, bytes memory toAddress, u
 ```
 
 - The `rawParam` is invoked by **users** and emits lock events involving **asset contract address** on the source chain, **target chain ID**, **target address,** and **amount of token** to be transferred. By calling this method, the business logic contract will **lock** a certain amount of valuable assets.
-- Then the transaction data is packed, which invokes the CCM contract. 
 - The CCM contract transfers the parameters of transaction data to the target chain based on block generation on the source chain;
 - The serialized **transaction data**, **chain ID**, **business logic contract address** of target chain, and the method needing to be called on the target chain is sent through `crossChain()` in the CCM contract.
 
 ### Step3. Verifying and executing
 
-Verifying and executing are invoked by the relayer, but in some cases, you could also invoke them by yourself if you get the valid block information from Poly. `verifyHeaderAndExecuteTx` fetches and processes **cross-chain transactions**, finds the **Merkle root** of a transaction based on the block height (in the block header), and verifies the **transaction's legitimacy** using the transaction parameters. After verifying the Poly chain block header and proof, `verifyHeaderAndExecuteTx` will invoke the business logic contract deployed on the target chain. See [here](https://dev-docs.poly.network/new_chain/side_chain/contracts.html#step4-verifying--executing) for deploy methods.  
+Verifying and executing are invoked by the relayer, but in some cases, you could also invoke them by yourself if you get the valid block information from Poly. See [here](https://dev-docs.poly.network/new_chain/side_chain/contracts.html#step4-verifying--executing) for deploy methods.  
 
 ````solidity
 /*  
