@@ -6,7 +6,7 @@
 There are two steps to test the interaction between your chain and Poly chain.
 
 ### 1.1 Debugging on DevNet 	
-Here is DevNet provided for developers to debug and test your codes. The access steps are as follows:
+DevNet for developers provides debugging and testing for your code. The access steps are as follows:
 
 - Propose a request to submit code developed for Poly chain to [GitHub](https://github.com/polynetwork/poly.git ) and wait for code review.
 - Propose a request to submit code developed for the new chain to [Github](https://github.com/polynetwork/eth-contracts) and wait for code review.
@@ -24,7 +24,7 @@ Here is DevNet provided for developers to debug and test your codes. The access 
 
 - Launch your relayer. 
 
-  If you choose to develop based on poly relayer, please propose a request to submit code to [Github](https://github.com/polynetwork/poly-relayer) and execute the subcommands below:
+  If you choose to develop based on poly relayer, please request to submit code to [Github](https://github.com/polynetwork/poly-relayer) and execute the subcommands below:
   - Generate a poly chain wallet, and contact Poly team via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> to add whitelist.
   - Compile the branch you developed.
   ```bash
@@ -38,7 +38,7 @@ Here is DevNet provided for developers to debug and test your codes. The access 
   ```bash
    ./relayer_main setheaderblock --height <the height> --chain <chainid>
   ```
-  - Start the serve.
+  - Start the server.
   ```bash
   ./server --config ./config.json --roles ./roles.json
   ```
@@ -53,9 +53,9 @@ Here is DevNet provided for developers to debug and test your codes. The access 
 - Notes on debugging:
   - Check your wallet balance regularly to avoid problems caused by insufficient balance.
   - Create multiple wallet accounts, which can speed up the cross-chain transaction.
-  - Make sure the chain has been registered before launching relayer.
+  - Make sure the chain has been registered before launching the relayer.
   - Ensure the relayer can work correctly, and check whether the block header can be accurately and continuously synchronized in both the poly chain and your chain. Synchronization is the prerequisite of processing cross-chain information.
-  - Check whether the cross-chain transaction can be verified correctly. You are suggested to deploy a simple business logic contract logic to call the cross-chain function and test if the three parts (Poly chain, your contract, and relayer) work well together.
+  - Check whether the cross-chain transaction can be verified correctly. We suggest that you deploy a simple business logic contract logic to call the cross-chain function and test if the three parts (Poly chain, your contract, and relayer) work well together.
 
 > [!Note|style:flat|label:Notice]
 > Here you are recommended to interact with your chain on DevNet, which means when you call the cross-chain function, 
@@ -74,19 +74,19 @@ Here is TestNet provided for developers to test the interaction between chains. 
    - The transaction has been completed on the source chain but not completed on Poly: 
     1. Is the block header synchronization normal？
     2. Does the relayer catch the transaction? 
-    3. Is the input parameter "toChainId" (the input parameter of cross-chain function, i.e., the target chain ID) is correct?
+    3. Is the input parameter "toChainId" (the input parameter of cross-chain function, i.e., the target chain ID) correct?
    - The transaction hasn't been completed on the target chain: 
-    1. Is the "method" (the function of your contract called by target chain) allowed to be called by CCM contract on target chain? 
-    2. Can "txData" (the input parameter of cross-chain function) be parsed correctly by "method" on the target chain？
+    1. Is the "method" (the function of your contract called by target chain) allowed to be called by CCM contract on the target chain? 
+    2. Can "txData" (the input parameter of cross-chain function) be parsed correctly by the "method" on the target chain？
 
 ## 2. Launch on MainNet
 Now you can follow the processes to launch your project on MainNet：
 - Notify Poly team via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> to merge the final code (including contracts and Poly code) into the MainNet, which should be taken about one week ahead of your launch schedule.
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLSdQHIylyhuga28TF3ChIaaxqt9JLRmzTCYXRlgxDAbrIr2DsQ/viewform) the cross-chain contract hash deployed on MainNet, MainNet RPC, chain name to Poly. Please verify your contract code.
-- Register to Poly Chain and `sync genesis block header` on Poly MainNet. The detail is consistent with TestNet and DevNet, and is also completed by Poly Network.
+- Register to Poly Chain and `sync genesis block header` on Poly MainNet. The information on the TestNet and DevNet is consistent, and has also been completed by Poly Network.
 - Launch your relayer.
 
 
-Congratulations! You have integrated your chain in Poly Network. If you want to deploy products, please refer to other guides we provide:
+Congratulations! You have integrated your chain in Poly Network. If you want to deploy products, please refer to the other guides we provide:
 - [Build New Bridges](../../new_product/integrate_bridge/readme.md)
 - [Customize Business Logic Contract](../../new_product/integrate_contracts/readme.md)
