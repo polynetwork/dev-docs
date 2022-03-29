@@ -106,7 +106,7 @@ function lock(address fromAssetHash, uint64 toChainId, bytes memory toAddress, u
 
 ### Step3. Verifying and executing
 
-Verifying and executing are invoked by the relayer, but in some cases, you could also invoke them by yourself if you get the valid block information from Poly. `verifyHeaderAndExecuteTx` fetches and processes **cross-chain transactions**, finds the **Merkle root** of a transaction based on the block height (in the block header), and verifies the **transaction's legitimacy** using the transaction parameters. After verifying the Poly chain block header and proof, `verifyHeaderAndExecuteTx` will invoke the business logic contract deployed on the target chain. See [here](../../new_chain/side_chain/contracts.md/Verifying & executing) for deploy methods.  
+Verifying and executing are invoked by the relayer, but in some cases, you could also invoke them by yourself if you get the valid block information from Poly. `verifyHeaderAndExecuteTx` fetches and processes **cross-chain transactions**, finds the **Merkle root** of a transaction based on the block height (in the block header), and verifies the **transaction's legitimacy** using the transaction parameters. After verifying the Poly chain block header and proof, `verifyHeaderAndExecuteTx` will invoke the business logic contract deployed on the target chain. See [here](https://dev-docs.poly.network/new_chain/side_chain/contracts.html#step4-verifying--executing) for deploy methods.  
 
 ````solidity
 /*  
