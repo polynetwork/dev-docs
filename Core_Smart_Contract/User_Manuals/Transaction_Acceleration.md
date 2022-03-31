@@ -36,5 +36,5 @@ If you encounter an error report as shown in the figure, please do not resubmit 
 After successfully submitting an accelerated transaction, you'll see a page as below, and please wait for a while.
       <img alt="img_31.png" src="img_31.png"/>
 
-If it still doesn't work, please contact Poly team via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a>.
+If it still doesn't work, please contact `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a>.
 

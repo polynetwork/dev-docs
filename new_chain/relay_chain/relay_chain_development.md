@@ -12,7 +12,7 @@ The block header must contain the following information：
 - Necessary information to prove the legitimacy of the block header varies from different consensus mechanisms.
 
 > [!Note|style:flat|label:Notice]
-> If your chain **doesn't** support techniques like Simple Payment Verification (SPV) protocol in Bitcoin or Light Ethereum Subprotocol (LES) in Ethereum, get in touch with Poly team via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> for more support.
+> If your chain **doesn't** support techniques like Simple Payment Verification (SPV) protocol in Bitcoin or Light Ethereum Subprotocol (LES) in Ethereum, get in touch with `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> for more support.
 
 ### 1.2 Block header structure and verification methods
 

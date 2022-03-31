@@ -22,7 +22,7 @@ If this describes your intention, the following information will be of service t
   Poly Bridge also update the price of tokens both on the source chain and the target chain from the market, informing users of the exchange rate and accurately calculating the transaction fee.
 
 > [!Note|style:flat|label:Notice]
-> For now, Poly Bridge is deployed by Poly team.
+> For now, Poly Bridge is deployed by `Poly team`.
 
 ## 2. Integrating Poly Bridge APIs
 If your goal is to implement your own cross-chain bridge, perhaps you should realize the four main functions mentioned above. For your convenience, Poly Bridge  also provides some API for you to integrate into your own cross-chain bridge.
