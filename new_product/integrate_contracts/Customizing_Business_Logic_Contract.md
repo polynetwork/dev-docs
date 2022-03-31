@@ -2,7 +2,7 @@
 
 Chains must only be deployed with one [CCM contract](../../new_chain/side_chain/contracts.md#1-introduction-to-cross-chain-contracts) to implement cross-chain features. For normal running, all the business logic contracts have to interconnect with the CCM contract via the interfaces offered by the CCM contract. See the following for a detailed description or reference to the complete code of the CCM contract.
 > [!Note|style:flat|label:Notice]
-> To implement cross-chain features, you need to ensure that the cross-chain methods in your business logic contracts have authorized CCM of Poly.
+> To implement cross-chain features, you need to ensure that the cross-chain methods in your business logic contracts have authorized CCM.
 
 ### Step1. Mapping asset
 
@@ -150,6 +150,6 @@ function unlock(bytes memory argsBs, bytes memory fromContractAddr, uint64 fromC
 }
 ```
 
-- `UnlockEvent` is invoked by the **CCM contract**. It deserializes the transaction data and invokes the asset contract to release the tokens to the target address.
+- `UnlockEvent` is invoked by the CCM contract. It deserializes the transaction data and invokes the asset contract to release the tokens to the target address.
 - `verifyHeaderAndExecuteTx()` in CCM contracts determines the **legitimacy** of cross-chain transaction information and resolves the parameters of transaction data from the Poly chain transaction Merkle proof and `crossStateRoot` contained in the block header.
 - Then call the function `unlock()` to deserialize the transaction data, transfer a certain amount of token to the target address on the target chain, and complete the cross-chain contract invocation.

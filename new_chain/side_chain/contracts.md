@@ -191,7 +191,7 @@ function verifyHeaderAndExecuteTx(bytes memory proof, bytes memory rawHeader, by
     // Load ehereum cross chain data contract
     IEthCrossChainData eccd = IEthCrossChainData(EthCrossChainDataAddress);
         
-    // Get stored consensus public key bytes of current poly chain epoch and deserialize Poly chain consensus public key bytes to address[]
+    // Get stored consensus public key bytes of current Poly chain epoch and deserialize Poly chain consensus public key bytes to address[]
     address[] memory polyChainBKs = ECCUtils.deserializeKeepers(eccd.getCurEpochConPubKeyBytes());
 
     uint256 curEpochStartHeight = eccd.getCurEpochStartHeight();
@@ -199,10 +199,10 @@ function verifyHeaderAndExecuteTx(bytes memory proof, bytes memory rawHeader, by
     uint n = polyChainBKs.length;
     if (header.height >= curEpochStartHeight) {
         // It's enough to verify rawHeader signature
-        require(ECCUtils.verifySig(rawHeader, headerSig, polyChainBKs, n - ( n - 1) / 3), "Verify poly chain header signature failed!");
+        require(ECCUtils.verifySig(rawHeader, headerSig, polyChainBKs, n - ( n - 1) / 3), "Verify Poly chain header signature failed!");
     } else {
         // We need to verify the signature of curHeader 
-        require(ECCUtils.verifySig(curRawHeader, headerSig, polyChainBKs, n - ( n - 1) / 3), "Verify poly chain current epoch header signature failed!");
+        require(ECCUtils.verifySig(curRawHeader, headerSig, polyChainBKs, n - ( n - 1) / 3), "Verify Poly chain current epoch header signature failed!");
 
         // Then use curHeader.StateRoot and headerProof to verify rawHeader.CrossStateRoot
         ECCUtils.Header memory curHeader = ECCUtils.deserializeHeader(curRawHeader);
@@ -284,10 +284,10 @@ To guarantee the safety of the CCM contract, we keep **whitelists** of contract 
 
 Here is the [template](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol#41) for adding a whitelist. We highly encourage developers to develop similar features of authority management in personal projects. 
 
-### 3. Developing CCD Module
+## 3. Developing CCD Module
 
 As mentioned above, CCD is functioned as storing and catching data of CCM. You can take different methods to realize CCM module for different chains according to your actual needs. In general, Poly Network team deploys the CCD contract separately for the CCD module, but you can also realize the module by deploying an integrated contracts.  See the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol) for the specifics.  
 
-### 4. Developing CCMP Module
+## 4. Developing CCMP Module
 
 CCMP is used to manage CCM. Similar to CCD, CCMP module also has two ways to be implemented. And you can see the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/upgrade/EthCrossChainManagerProxy.sol) for the specifics.

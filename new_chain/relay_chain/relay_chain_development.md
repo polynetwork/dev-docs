@@ -60,7 +60,7 @@ The **key information** for this method (submitted by .config):
 
 | Method                  | Description                                                  |
 | ----------------------- | :----------------------------------------------------------- |
-| **MakeDepositProposal** | It acts as the entrance of verifyFromTx, **verifying**, **storing**, and **returning** MakeTxParam for processing cross-chain steps, verifies cross-chain transactions, and stores legitimate transactions to the poly chain.  Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/cross_chain_manager/eth/eth_handler.go#L34) for more details. |
+| **MakeDepositProposal** | It acts as the entrance of verifyFromTx, **verifying**, **storing**, and **returning** MakeTxParam for processing cross-chain steps, verifies cross-chain transactions, and stores legitimate transactions to the Poly chain.  Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/cross_chain_manager/eth/eth_handler.go#L34) for more details. |
 
 ```go
 MakeDepositProposal:

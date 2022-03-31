@@ -7,7 +7,7 @@ Here we presuppose four major goals and provide corresponding tutorials for you 
 <div align=center><img src="resources/reading_guideline.png" alt=""/></div>
 
 ## Connect New Chains
-Please read this section if you want to connect your chain to Poly:
+Please read this section if you want to connect your chain to Poly cross-chain ecosystem:
 - [Connect New Chains](new_chain/readme.md)
 
 ## Build New Bridges
