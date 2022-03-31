@@ -1,28 +1,34 @@
 <h1 align="center">Develop for New Chain</h1>
 
-The development of a new chain mainly focuses on developing cross-chain modules. Here, the cross-chain module works as a set of **smart contracts**.
+The development of a new chain mainly involves developing cross-chain modules. In chains supporting EVM, the cross-chain module works as a set of **smart contracts**.
 
-In some cases, it can also work as a native blockchain module.
-To help you develop it, we offer examples in Solidity for each of the main methods.
+In some cases, it can also work as a native module.
+
+To help you develop it, here Poly Network team offers examples in Solidity to develop smart contract for each main method.
 You may refer to the complete [code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager) of these contracts.
 
 > [!Note|style:flat|label:Notice]
-> If the chain integrated to Poly Network supports EVM, you can freely use our cross-chain contracts as templates. If not, you may need to develop your own contracts containing the main features, as shown in the following guidelines.
+> If the chain integrated to Poly Network supports EVM, you can freely use Poly cross-chain contracts as templates. If not, you may need to develop your own contracts containing the main features, as shown in the following guidelines.
 
 ## 1. Introduction to Cross-chain Contracts
-In this part, we sort the contracts into **data**, **logic**, and **proxy** contracts to complete the cross-chain contracts. You can choose to follow the methods listed below or find other ways for your project.
+In general, cross-chain contracts are sorted into **logic**, **data**, and **proxy** contracts. You could either follow the methods listed below or choose other ways for your project.
+
 - List of contracts:
-    - [Cross Chain Manager Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol): On the source chain, it creates the cross-chain transactions to Poly. The target chain verifies the legitimacy of transactions and executes the method on the target business logic contract. From here onwards this is referred to as a CCM contract.
-    - [Cross Chain Data Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol): It serves as a database of cross-chain transactions. From here onwards this is referred to as a CCD contract.
-    - [Cross Chain Manager Proxy Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/upgrade/EthCrossChainManagerProxy.sol): It serves as a proxy for the CCM contract. When there isn't any need to upgrade the CCM contract, it pauses the old CCM contract and sets the new CCM contract as the the CCD contract.
-    - Business Logic Contract: It executes the business logic of cross-chain projects. It interacts with users and the CCM contract both on the source and target chains. We also offer the [guidelines](../../new_product/integrate_contracts/Customizing_Business_Logic_Contract.md) for developing a Business Logic Contract.
+  - [Cross Chain Manager Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol): It serves as an agent to manage the cross-chain transaction both on the source chain and the target chain. It may be referred to as CCM contract in the following context.
+
+  - [Cross Chain Data Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol): It serves as a database of cross-chain transactions. It may be referred to as CCD contract in the following context.
+
+  - [Cross Chain Manager Proxy Contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/upgrade/EthCrossChainManagerProxy.sol): It serves as a proxy of the CCM contract to update the CCM contracts stored in CCD contracts. It may be referred to as CCMP contract in the following context.
+
+  - Business Logic Contract: It executes the business logic of cross-chain projects. It interacts with users and the CCM contract both on the source and target chains. We also offer the [guidelines](../../new_product/integrate_contracts/Customizing_Business_Logic_Contract.md) for developing a Business Logic Contract.
+
 - Interactions among contracts
 
 <div align=center><img src="resources/contracts_interaction.png" alt=""/></div>
 
 ## 2. Developing CCM Contracts
 
-Before customizing your CCM, you need to implement the following four features.
+The following four features are the core functions of CCM contracts and must be implemented.
 
 ### Step1. Synchronizing genesis block header
 
@@ -277,3 +283,11 @@ function _executeCrossChainTx(address _toContract, bytes memory _method, bytes m
 To guarantee the safety of the CCM contract, we keep **whitelists** of contract addresses and methods to prevent invalid calls. Meanwhile, we also set `whiteLister` to manage these whitelists of the CCM contract.
 
 Here is the [template](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol#41) for adding a whitelist. We highly encourage developers to develop similar features of authority management in personal projects. 
+
+### 3. Developing CCD Module
+
+As mentioned above, CCD is functioned as storing and catching data of CCM. You can take different methods to realize CCM module for different chains according to your actual needs. In general, Poly Network team deploys the CCD contract separately for the CCD module, but you can also realize the module by deploying an integrated contracts.  See the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol) for the specifics.  
+
+### 4. Developing CCMP Module
+
+CCMP is used to manage CCM. Similar to CCD, CCMP module also has two ways to be implemented. And you can see the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/upgrade/EthCrossChainManagerProxy.sol) for the specifics.
