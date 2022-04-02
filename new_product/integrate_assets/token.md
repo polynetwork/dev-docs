@@ -11,8 +11,7 @@ To import tokens, there are four steps to follow which are listed below.
 - Transfer the initialized assets to the target chain [proxy contract](../../Core_Smart_Contract/Contract/LockProxy.md).
 
 ### Step3. Information submission
-- [Download](https://dev-docs.poly.network/new_product/integrate_assets/resources/token_import_template.xlsx) the asset template and fill in the information according to an example in the template.
-- [Submit](https://docs.google.com/forms/d/e/1FAIpQLSfIOje4k_t4rjzli-ItMqTTckPZ7MqtoTzP2Bjr666wy4Up1g/viewform) the .xlsx file to poly.
+- [Submit](https://docs.google.com/forms/d/e/1FAIpQLScEdSVFT_OogZj9Yq3YG4IKKKrvdcjB3hMrG5udgGIzxvFZBw/viewform) your NFT information to the Poly Network team.
 - Contact Poly Network via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a>
 
 ### Step4. Test 

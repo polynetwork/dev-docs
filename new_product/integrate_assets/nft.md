@@ -26,8 +26,7 @@ Here are the three steps to follow to import an NFT.
   ```
   
 ### Step2. Information submission
-- [Download](https://dev-docs.poly.network/new_product/integrate_assets/resources/nft_import_template.xlsx) the asset template and fill in the information according to the example in Excel.
-- [Submit](https://docs.google.com/forms/d/e/1FAIpQLSedb7y1JZVRvv-NIbHOhSzOLcr9u1fGqyJGkMybVkEmCLyU5Q/viewform?usp=sf_link) the .xlsx file to poly.
+- [Submit](https://docs.google.com/forms/d/e/1FAIpQLSfH1VcCAmdtjcQeCFjSXvYw7QS9MtsegzktyNmSvIPZzleSYg/viewform) your NFT information to the Poly Network team.
 - Contact Poly Network via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a>
 
 ### Step3. Test 
