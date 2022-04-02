@@ -11,7 +11,7 @@ There are two steps for you to test your contracts.
 ### Step 1. Preparation
 
 - Deploy your **contract** in the source chain and target chain (For safety reasons, it is recommended to run the test on the TestNet. If you have to run the test on the MainNet, please contact the `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a>).
-- Please [submit](https://docs.google.com/forms/d/e/1FAIpQLSc7jYVZQVWtLRG8ERLkzH7RWSxfrNaJel3s5qwsvV7XbVWPtg/viewform) the "**method**" (the input parameter of cross-chain function, i.e., the function of your contract called by target chain).
+- Please [submit](https://docs.google.com/forms/d/e/1FAIpQLSeP_4apj9ZYnA8pJFw19YQgoejfUeX1riHWJngIbVldyv7NYA/viewform) the "**method**" (the input parameter of cross-chain function, i.e., the function of your contract called by target chain).
 - The `Poly team` will add this "method" to the relayer whitelist to process the transactions automatically. Otherwise, the transaction cannot be processed on the Poly chain.
 
 ### Step 2. Test on Poly Network
@@ -80,7 +80,7 @@ After all tests have been completed on the TestNet; you are ready to launch on t
 The steps are as follows:
 
 - First, deploy your contract on the MainNet;
-- Next, [submit](https://docs.google.com/forms/d/e/1FAIpQLSe0Za4V9vaCUbrJG8qgYrjHbLQ8Kk_APQ1jURGpUAPm0MT7JQ/viewform) the "method" and the source contract hash you have deployed;
+- Next, [submit](https://docs.google.com/forms/d/e/1FAIpQLSf7GKqlVkAUbhfs7qFj2wKW_p2qWCJJzBJlEGjNduGfi0wlTQ/viewform) the "method" and the source contract hash you have deployed;
 - Then, launch your relayer (See [here](../../new_chain/launch_and_test/launch.md) for steps).
 
 When all is done, you can start your cross-chain journey.
