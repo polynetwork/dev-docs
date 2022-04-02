@@ -1,9 +1,6 @@
 <h1 align="center">Import NFT</h1>
 
-In most cases, you only need to deploy the NFT contract on the source chain, while Poly Network goes on to deploy the NFT proxy contract on the target chain.
-The source NFT contract must support the [EIP-721 standard](https://eips.ethereum.org/EIPS/eip-721). It should be noted here that the [EIP-721 standard](https://eips.ethereum.org/EIPS/eip-721) excludes the mint method.
-
-In our cross-chain process, Poly Network will determine whether this asset is in the target contract when the newly generated asset on the source chain is transferred. If not, a new NFT will be minted.
+The source NFT contract must support `ERC721`, `ERC721Metadata` and `ERC721Enumerable` interfaces with the [ERC-721 standard](https://eips.ethereum.org/EIPS/eip-721).
 
 Here are the three steps to follow to import an NFT. 
 ### Step1. Development and deployment
@@ -19,9 +16,9 @@ Here are the three steps to follow to import an NFT.
   
   ```solidity 
   function mintWithURI(address to, uint256 tokenId, string memory uri) external {
-  require(!_exists(tokenId), "token id already exist");
-  _safeMint(to, tokenId);
-  _setTokenURI(tokenId, uri);
+    require(!_exists(tokenId), "token id already exist");
+    _safeMint(to, tokenId);
+    _setTokenURI(tokenId, uri);
   }
   ```
   
