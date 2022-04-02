@@ -7,7 +7,7 @@ This step shows how to develop a relayer for your chain or project. The relayer 
 There are two components required: **Chain Listener** and **Chain Submitter**. 
 
 ### 1.1 Chain Listener
-Chain listener fetches data from the source chain and poly chain, including block header, cross-chain events emitted from CCM, and Merkle proofs used to verify the cross-chain message in the poly chain.
+Chain listener fetches data from the source chain and Poly chain, including block header, cross-chain events emitted from CCM, and Merkle proofs used to verify the cross-chain message in the Poly chain.
 The listed interface is necessary.
 
 ```go
@@ -20,13 +20,13 @@ type IChainListener interface {
   ListenCheck() time.Duration
   // Chain Id
   ChainId() uint64
-  // Optional: Fetch block header and header hash, used to submit to poly chain for verifications
+  // Optional: Fetch block header and header hash, used to submit to Poly chain for verifications
   Header(height uint64) (header []byte, hash []byte, err error)
-  // Optional: Last header sync state in poly chain.
+  // Optional: Last header sync state in Poly chain.
   LastHeaderSync(uint64, uint64) (uint64, error)
   // Scan cross chain transactions included in the block
   Scan(uint64) ([]*msg.Tx, error)
-  // Compose cross chain message before submit to poly chain
+  // Compose cross chain message before submit to Poly chain
   Compose(*msg.Tx) error
   // Current chain height
   LatestHeight() (uint64, error)
@@ -46,7 +46,7 @@ type IChainSubmitter interface {
   Submit(msg.Message) error
   // Start the thread
   Start(context.Context, *sync.WaitGroup, bus.TxBus, bus.DelayedTxBus, msg.PolyComposer) error  
-  // Process the cross chain message from poly chain
+  // Process the cross chain message from Poly chain
   ProcessTx(*msg.Tx, msg.PolyComposer) error
 }
 ```
@@ -84,11 +84,11 @@ The configurations are required when launching relayer:
 
 | Roles      | Quantity Demand                | Description                                                  |
 | ---------- | ------------------------------ | ------------------------------------------------------------ |
-| HeaderSync | One or multiple for each chain | Submits chain headers to the poly chain.                  |
+| HeaderSync | One or multiple for each chain | Submits chain headers to the Poly chain.                  |
 | TxListen   | Only one for each chain        | Observes cross-chain transactions from the source chain and pushes them to the message queue. |
 | TxCommit   | One or multiple for each chain | Consumes the message queue and submits the cross-chain transactions to poly. |
-| PolyListen | Only One for poly chain        | Observes cross-chain transactions from the poly chain and pushes them to the message queue. |
-| PolyCommit | One or multiple for poly chain | Consumes the message queue and submits the cross-chain transaction to the target chain. |
+| PolyListen | Only One for Poly chain        | Observes cross-chain transactions from the Poly chain and pushes them to the message queue. |
+| PolyCommit | One or multiple for Poly chain | Consumes the message queue and submits the cross-chain transaction to the target chain. |
 
 
 You are now ready for the relayer, please refer to the chapter [Test and Launch](../../new_chain/launch_and_test/launch.md) for launching details.

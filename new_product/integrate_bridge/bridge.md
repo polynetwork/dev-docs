@@ -1,7 +1,7 @@
 <h1 align="center">API</h1>
 
 The following APIs are provided for developers who need to implement the bridge function. 
-If you want to integrate into the Poly bridge, please get in touch with Poly team via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> for more support.
+If you want to integrate into the Poly bridge, please get in touch with `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> for more support.
 
 ## Poly Bridge APIs:
 

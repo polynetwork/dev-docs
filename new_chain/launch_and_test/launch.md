@@ -10,7 +10,7 @@ DevNet for developers provides debugging and testing for your code. The access s
 
 - Propose a request to submit code developed for Poly chain to [GitHub](https://github.com/polynetwork/poly.git ) and wait for code review.
 - Propose a request to submit code developed for the new chain to [Github](https://github.com/polynetwork/eth-contracts) and wait for code review.
-- [Submit](https://docs.google.com/forms/d/e/1FAIpQLSezACsGdL9p5GZw-xV1c4V-akoNB4kRR53Q6ZJQPy9QetcWOw/viewform) the Cross-chain contracts hash you have deployed and the RPC that can connect your chain, then wait for the Poly team to allocate chain ID and router number.
+- [Submit](https://docs.google.com/forms/d/e/1FAIpQLSezACsGdL9p5GZw-xV1c4V-akoNB4kRR53Q6ZJQPy9QetcWOw/viewform) the Cross-chain contracts hash you have deployed and the RPC that can connect your chain, then wait for the `Poly team` to allocate chain ID and router number.
 - Register to Poly Chain and sync genesis block header. The details are as follows:
   
   - **Register to Poly Chain**
@@ -20,12 +20,12 @@ DevNet for developers provides debugging and testing for your code. The access s
    1. Call entry function `SyncSideChainGenesisHeader`
 
 > [!Note|style:flat|label:Notice]
-> Registration is currently completed by the Poly team with the trusted account.
+> Registration is currently completed by the `Poly team` with the trusted account.
 
 - Launch your relayer. 
 
   If you choose to develop based on poly relayer, please request to submit code to [Github](https://github.com/polynetwork/poly-relayer) and execute the subcommands below:
-  - Generate a poly chain wallet, and contact Poly team via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> to add whitelist.
+  - Generate a Poly chain wallet, and contact `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> to add whitelist.
   - Compile the branch you developed.
   ```bash
    ./build.sh devnet/testnet/mainnet
@@ -54,7 +54,7 @@ DevNet for developers provides debugging and testing for your code. The access s
   - Check your wallet balance regularly to avoid problems caused by insufficient balance.
   - Create multiple wallet accounts, which can speed up the cross-chain transaction.
   - Make sure the chain has been registered before launching the relayer.
-  - Ensure the relayer can work correctly, and check whether the block header can be accurately and continuously synchronized in both the poly chain and your chain. Synchronization is the prerequisite of processing cross-chain information.
+  - Ensure the relayer can work correctly, and check whether the block header can be accurately and continuously synchronized in both the Poly chain and your chain. Synchronization is the prerequisite of processing cross-chain information.
   - Check whether the cross-chain transaction can be verified correctly. We suggest that you deploy a simple business logic contract logic to call the cross-chain function and test if the three parts (Poly chain, your contract, and relayer) work well together.
 
 > [!Note|style:flat|label:Notice]
@@ -63,7 +63,7 @@ DevNet for developers provides debugging and testing for your code. The access s
 
 ### 1.2 Test on TestNet
 Here is TestNet provided for developers to test the interaction between chains. The access to TestNet is almost the same as that of DevNet,
-- Propose a request to submit code developed for the poly chain to [Github ](https://github.com/polynetwork/poly.git )and wait for code review.
+- Propose a request to submit code developed for the Poly chain to [Github ](https://github.com/polynetwork/poly.git )and wait for code review.
 - Propose a request to submit code developed for the new chain to [Github](https://github.com/polynetwork/eth-contracts.git) and wait for code review.
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLSdsGcfwRfp_5hdB2n0jqXY817nTgQ_ME3PT-B8P6eO0XGHsKw/viewform) the cross-chain contract hash, RPC, chain name to Poly.
 - Register to Poly Chain and `sync genesis block header` on Poly TestNet. The detail is consistent with DevNet and is also completed by Poly Network.
@@ -81,7 +81,7 @@ Here is TestNet provided for developers to test the interaction between chains. 
 
 ## 2. Launch on MainNet
 Now you can follow the processes to launch your project on MainNet：
-- Notify Poly team via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> to merge the final code (including contracts and Poly code) into the MainNet, which should be taken about one week ahead of your launch schedule.
+- Notify `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> to merge the final code (including contracts and Poly code) into the MainNet, which should be taken about one week ahead of your launch schedule.
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLSdQHIylyhuga28TF3ChIaaxqt9JLRmzTCYXRlgxDAbrIr2DsQ/viewform) the cross-chain contract hash deployed on MainNet, MainNet RPC, chain name to Poly. Please verify your contract code.
 - Register to Poly Chain and `sync genesis block header` on Poly MainNet. The information on the TestNet and DevNet is consistent, and has also been completed by Poly Network.
 - Launch your relayer.

@@ -1,6 +1,6 @@
 <h1 align="center">FAQ</h1>
 
-Though not exhaustive, these FAQs will help you get started and troubleshoot some of the most common user problems when using Poly Bridge.
+Though not exhaustive, these FAQs will help you get started and troubleshoot some of the most common problems users have when using Poly Bridge.
 
 ## Stay Tuned with Us:
 - Official site：https://www.poly.network/
@@ -47,7 +47,7 @@ A: No, Poly Network is not related to them. It’s just a coincidence that we al
 
 ## About Poly Bridge
 
-####<img alt="img_7.png" height="25pcs" src="img_7.png" width="25pcs"/> When you first meet Poly Bridge, you may concern:
+####<img alt="img_7.png" height="25pcs" src="img_7.png" width="25pcs"/> When you first meet Poly Bridge, you may wonder:
 <div class="card">
     <div class="card-header" id="heading7">
       <h5 class="mb-0">
@@ -58,7 +58,7 @@ Q1: What is Poly Bridge? What functions does it provide? Where is the website?
    </div>
    <div id="collapse7" class="collapse" aria-labelledby="heading7">
     <div class="card-body">
-A: Poly Bridge is a bridge through which you can transfer your asset (including tokens and NFTs) between different chains easily and quickly.
+A: Poly Bridge is a bridge through which you can easily and quickly transfer your asset (including tokens and NFTs) between different chains.
       </div>
     </div>
   </div>
@@ -73,24 +73,24 @@ Q2: What’s the relationship between Poly Network and Poly Bridge?
    </div>
    <div id="collapse32" class="collapse" aria-labelledby="heading32">
     <div class="card-body">
-A: Poly Network incorporated many dApps, including Poly Bridge that was created by Poly Network.
+A: Poly Network has incorporated many dApps, including the Poly Bridge which was created by Poly Network.
 </div>
     </div>
   </div>
 
-####<img alt="img_4.png" height="25pcs" src="img_4.png" width="25pcs"/> If you are a developer, you may concern:
+####<img alt="img_4.png" height="25pcs" src="img_4.png" width="25pcs"/> If you are a developer, you may wonder:
 
 <div class="card">
     <div class="card-header" id="heading9">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-Q1: How to integrate token onto Poly Bridge?
+Q1: How to integrate tokens onto Poly Bridge?
 </button>
       </h5>
    </div>
    <div id="collapse9" class="collapse" aria-labelledby="heading9">
     <div class="card-body">
-A: Here is a <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a> instructing developers to integrate token onto Poly Bridge.
+A: Here is a <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a> instructing developers how to integrate token onto Poly Bridge.
       </div>
     </div>
   </div>
@@ -106,17 +106,17 @@ Q2: Where can I find the contract?
    </div>
    <div id="collapse11" class="collapse" aria-labelledby="heading11">
     <div class="card-body">
-A: Here is an <a href="https://github.com/polynetwork/docs/tree/master/config">appendix</a> that includes basic contracts and some business contracts deployed and used by Poly Network, please go to check it.
+A: Here is an <a href="https://github.com/polynetwork/docs/tree/master/config">appendix</a> that includes basic contracts and some business contracts deployed and used by Poly Network, we encourage you to check it out.
       </div>
     </div>
   </div>
 
-####<img alt="img_8.png" height="25pcs" src="img_8.png" width="25pcs"/> If you are a user, you may concern:
+####<img alt="img_8.png" height="25pcs" src="img_8.png" width="25pcs"/> If you are a user, you may wonder:
 <div class="card">
     <div class="card-header" id="heading12">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-Q1: Does Poly Network issue any token?
+Q1: Has Poly Network issued any tokens?
 </button>
       </h5>
    </div>
@@ -131,13 +131,13 @@ A: Poly Network hasn't issued any token yet.
     <div class="card-header" id="heading13">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-Q2: How to transfer my assets between two chains through Poly Bridge?
+Q2: How can I transfer my assets between two chains through Poly Bridge?
 </button>
       </h5>
    </div>
    <div id="collapse13" class="collapse" aria-labelledby="heading13">
     <div class="card-body">
-A: Please refer to the <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a>.
+A: Please refer to this <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a>.
       </div>
     </div>
   </div>
@@ -147,13 +147,13 @@ A: Please refer to the <a href="https://medium.com/poly-network/poly-bridge-pers
     <div class="card-header" id="heading14">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-Q3: How much fee does Poly Bridge charge per transaction?
+Q3: How much is the fee that Poly Bridge charges per transaction?
 </button>
       </h5>
    </div>
    <div id="collapse14" class="collapse" aria-labelledby="heading14">
     <div class="card-body">
-A: In order to cover the gas fee charged by your target chain, Poly Bridge will collect fees accordingly when you cross-chain your assets. No extra fee is charged.
+A: The fee for transfering assets is collected according to the cross-chain transaction and is used  to cover the gas fee charged by your target chain. Poly Bridge doesn't charge any additional fees.
       </div>
     </div>
   </div>
@@ -169,7 +169,7 @@ Q4: Is the bridge rate 1:1?
    </div>
    <div id="collapse15" class="collapse" aria-labelledby="heading15">
     <div class="card-body">
-A: Normally yes, except for deflationary tokens.
+A: Normally yes, with the exception of deflationary tokens.
     </div>
     </div>
   </div>
@@ -184,7 +184,7 @@ Q5: How long does it take per transaction?
    </div>
    <div id="collapse16" class="collapse" aria-labelledby="heading16">
     <div class="card-body">
-A: Average estimated time of arrival is 1–10 min. Irresistible factors such as network congestion might delay the transaction. If your transaction hasn’t been completed for a long time, please refer to Q6.
+A: The average estimated time of arrival is 1–10 min. Unavoidable factors such as network congestion might delay the transaction further. If your transaction hasn’t been completed for a long time, please refer to Q6.
       </div>
     </div>
   </div>
@@ -200,11 +200,11 @@ Q6：I have waited a long time and still haven’t received my asset. What can I
    </div>
    <div id="collapse17" class="collapse" aria-labelledby="heading17">
     <div class="card-body">
-A: Please check which step your transaction has reached. Solutions vary from different steps：
+A: Please check which step of the transaction process your transfer has reached. Solutions vary accordingly：
 <ul>
  <li>The transaction hasn't been completed on the source chain：For safety reasons, Poly Bridge will not confirm your transaction immediately until subsequent blocks have been confirmed (the number of subsequent blocks is different for different chains), please wait for block confirmation.</li>
  <li>The transaction has been completed on the source chain, but not completed on Poly: if the transaction has been stuck in this step for over 5 min, please do not hesitate to contact the Poly Network Team.</li>
- <li>The transaction hasn't been completed on the target chain: it’s perhaps down to the transaction congestion of the target chain, please wait for a while or refer to the accelerated transaction <a href="https://medium.com/poly-network/poly-bridge-new-acceleration-function-pc-user-manual-cd0b6cacceea">tutorial</a>. If the accelerated tutorial doesn't work, please contact <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
+ <li>The transaction hasn't been completed on the target chain: it’s perhaps down to the transaction congestion of the target chain, please wait for a while or refer to the accelerated transaction <a href="https://medium.com/poly-network/poly-bridge-new-acceleration-function-pc-user-manual-cd0b6cacceea">tutorial</a>. If the accelerated tutorial doesn't help you, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
 </ul>
 </div>
     </div>
@@ -214,13 +214,13 @@ A: Please check which step your transaction has reached. Solutions vary from dif
     <div class="card-header" id="heading18">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
-Q7: Where can I find my previous transaction or check the status of my transaction?
+Q7: Where can I find my previous transactions or check the status of a transaction?
 </button>
       </h5>
    </div>
    <div id="collapse18" class="collapse" aria-labelledby="heading18">
     <div class="card-body">
-A: You can check your previous transaction in "History". And then click "Status" to check the current progress.
+A: You can check your previous transactions in "History". And then click "Status" to check the current progress.
     </div>
     </div>
   </div>
@@ -229,7 +229,7 @@ A: You can check your previous transaction in "History". And then click "Status"
     <div class="card-header" id="heading19">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
-Q8: The transaction is confirmed in my history but why aren’t the tokens showing in my metamask?
+Q8: The transaction is confirmed in my history. Why aren’t the tokens showing up in my metamask?
 </button>
       </h5>
    </div>
@@ -245,24 +245,24 @@ A: You may have to manually add that specific token to your metamask. This can b
     <div class="card-header" id="heading20">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
-Q9: When an error is shown on my wallet page, what shall I do?
+Q9: When an error is shown on my wallet page, what should I do?
 </button>
       </h5>
    </div>
    <div id="collapse20" class="collapse" aria-labelledby="heading20">
     <div class="card-body">
-A: <li>Firstly, make sure you have approved enough amount for Poly Bridge contract to use the token;</li>
-   <li>Secondly, make sure you have sufficient native tokens to cover the gas fee charged both by source chain and target chain and the amount you want to transfer.
+A: <li>First, make sure the amount of token which you have approved for the Poly Bridge contract to use is sufficient;</li>
+   <li>Second, make sure the amount of native tokens you have is sufficient to cover the gas fee charged both by the source chain and target chain, in addition to the amount you want to transfer.
 If you transfer native tokens: $amount in your wallet ≥ transfer amount + src chain gas fee + target chain gas fee.
 If you transfer non-native tokens: $native token amount in your wallet ≥ src chain gas fee + target chain gas fee.
-For example, if you want to transfer `METIS` from Andromeda to BSC, you have to reserve tokens both for source chain gas fee and for target chain gas fee. The rest are the amount of tokens you can transfer.
-For your better use, Poly Bridge set as follows:
+For example, if you want to transfer `METIS` from Andromeda to BSC, you have to reserve tokens for fees on both the source chain gas fee and the target chain. The rest is the amount of tokens you can transfer.
+For ease of use, Poly Bridge uses the following:
 <ol>
-   <li>If $native token amount in your wallet < transfer token amount + src chain gas fee + target chain gas fee, you’ll be informed that the transferable token amount is ZERO and see a WARNING of "insufficient funs" after clicking MAX;</li>
-   <li>If $native token amount in your wallet > transfer token amount + src chain gas fee + target chain gas fee, the max amount of transferable token = $native token amount in your wallet -target chain gas fee -estimated src chain gas fee. To guarantee the sufficient transaction fee on src chain, the estimated src chain gas fee could be slightly higher than the actual fee, so that some native tokens will remain in your account after transaction (i.e., native token won’t be totally transferred);</li>
+   <li>If the $value of native tokens in your wallet < transfer token amount + src chain gas fee + target chain gas fee, you’ll be informed that the transferable token amount is ZERO and see a WARNING of "insufficient funs" after clicking MAX;</li>
+   <li>If $value of native tokens in your wallet > transfer token amount + src chain gas fee + target chain gas fee, the max amount of transferable token = $native token amount in your wallet - target chain gas fee - estimated src chain gas fee. To guarantee a sufficient amount for the transaction fee on src chain, the estimated src chain gas fee may be slightly higher than the actual fee, so that some native tokens will remain in your account after the transaction (i.e., not all the native tokens will be transferred);</li>
 </ol>
    </li>
-<li>Thirdly, if you encounter other types of error, please contact <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
+<li>Thirdly, if you encounter other types of error, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
      </div>
     </div>
   </div>
@@ -271,17 +271,17 @@ For your better use, Poly Bridge set as follows:
     <div class="card-header" id="heading21">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
-Q10: When I click MAX, why is the amount of transferable token less than my overall balance?
+Q10: When I click MAX, why is the amount of transferable tokens lower than my overall balance?
 </button>
       </h5>
    </div>
    <div id="collapse21" class="collapse" aria-labelledby="heading21">
     <div class="card-body">
-A: Here are three conditions:
+A: This is a result of the following three conditions:
 <ol>
-<li>Poly bridge will reserve transaction fee of both src chain and target chain for users (Tips: the fee will be reserved only when the transferred token is native token). So, the transferable token amount doesn't equal to your account balance.</li>
-<li>Some tokens may have their own characteristics that limit the amount of transfer, so you may not be able to transfer all your assets in one time (but you can break it into several times).</li>
-<li>When the liquidity of target chain is lower than your account balance, you cannot transfer all your assets in one time. Please contact <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a> under this condition.</li>
+<li>Poly bridge reserves transaction fees for both src chain and target chain for users (Tips: the fee will be reserved only when the transferred token is a native token). So, the transferable token amount doesn't equal to your account balance.</li>
+<li>Some tokens have their own characteristics that limit the transfer amount, so you may not be able to transfer all your assets in one time (but you can break it up into several transactions).</li>
+<li>When the liquidity available on the target chain is lower than your account balance, you cannot transfer all your assets in one time. In this case, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a> under this condition.</li>
 </ol>
       </div>
     </div>
@@ -292,15 +292,15 @@ A: Here are three conditions:
     <div class="card-header" id="heading22">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
-Q11: Why is the liquidity of the target chain shown sufficient in "Max available amount" before sending a transaction and then<br>
+Q11: Why is the liquidity of the target chain displayed as sufficient in "Max available amount" prior to sending a transaction and then<br>
 after the transaction on the source chain is completed, the transaction on the target chain fails because of insufficient liquidity?
 </button>
       </h5>
    </div>
    <div id="collapse22" class="collapse" aria-labelledby="heading22">
     <div class="card-body">
-A: <li>The liquidity shown in "Max available amount" refers to liquidity for all users, not your share of the liquidity. If there are several users initiating large transactions at the same time, the liquidity might be insufficient for all transactions.</li>
-<li>It happens mostly when the amount you transfer is close to the max available amount. Under this occasion, Poly Network will contact the relevant project to add liquidity as soon as possible.</li>
+A: <li>The liquidity shown in "Max available amount" refers to the liquidity availbale for all users, not your share of the liquidity. If there are several users initiating large transactions at the same time, the liquidity might be insufficient for all transactions.</li>
+<li>It happens mostly when the amount you transfer is close to the max available amount. Under this circumstance, Poly Network will contact the relevant project to get them to add liquidity as soon as possible.</li>
       </div>
     </div>
   </div>
@@ -325,13 +325,13 @@ A: Sure you can! Here is the <a href="https://medium.com/poly-network/poly-bridg
     <div class="card-header" id="heading24">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
-Q13: When "unknown wallet error" pops up on the Poly Bridge page, what shall I do?
+Q13: When "unknown wallet error" pops up on the Poly Bridge page, what should I do?
 </button>
       </h5>
    </div>
    <div id="collapse24" class="collapse" aria-labelledby="heading24">
     <div class="card-body">
-A: Please check whether the network you connect to is stable by switching nodes of the network.
+A: Please check whether the network you are connected to is stable by switching nodes of the network.
       </div>
     </div>
   </div>
@@ -341,14 +341,14 @@ A: Please check whether the network you connect to is stable by switching nodes 
     <div class="card-header" id="heading25">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
-Q14: When I encounter an error submitting an accelerated transaction, what shall I do?
+Q14: When I encounter an error submitting an accelerated transaction, what should I do?
 </button>
       </h5>
    </div>
    <div id="collapse25" class="collapse" aria-labelledby="heading25">
     <div class="card-body">
-A: <li>First of all, please do not submit the accelerated transaction when you encounter an error. Because when the error is shown, the transaction has already been completed on the target chain.</li>
-<li>Please check the balance in your wallet to see whether you have received your assets. If you have not, please contact <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
+A: <li>Please do not submit the accelerated transaction when you encounter an error. Because when the error is displayed, the transaction has already been completed on the target chain.</li>
+<li>Please check the balance in your wallet to see whether you have received your assets. If you have not, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
       </div>
     </div>
   </div>
@@ -359,7 +359,7 @@ A: <li>First of all, please do not submit the accelerated transaction when you e
     <div class="card-header" id="heading26">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
-Q15:  If my transaction is stuck on the bridge can I cancel the transfer and receive a refund instead?
+Q15:  If my transaction is stuck on the bridge, can I cancel the transfer and receive a refund instead?
 </button>
       </h5>
    </div>
@@ -376,15 +376,15 @@ A: All transactions at any stage are IRREVERSIBLE. If your transaction is stuck 
     <div class="card-header" id="heading27">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
-Q16: If I have not applied Poly Bridge frontend to process my transaction and can’t receive my assets, what shall I do?
+Q16: If I have not applied Poly Bridge frontend to process my transactions and can’t receive my assets, what shall I do?
 </button>
       </h5>
    </div>
    <div id="collapse27" class="collapse" aria-labelledby="heading27">
     <div class="card-body">
 A: <ul>
-<li>Firstly, please make sure you have paid enough fee to Poly Bridge, and you can check it by calling the "get fee" api. If you haven’t paid enough fee, it is recommended that you use the acceleration function to speed up the target chain transaction.</li>
-<li>Secondly, if you have already paid enough fee or tried to accelerate but the transaction still fails, please contact <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>. </li>
+<li>First, please ensure the fee you have paid fee to Poly Bridge is sufficient. You can check this by calling the "get fee" api. If the fee paid is insufficient, it is recommendeded that you use the acceleration function to speed up the target chain transaction.</li>
+<li>Second, if the fee you have paid is sufficient or you have tried to use the accelerate function but the transaction still fails, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>. </li>
 </ul>
       </div>
     </div>
@@ -401,7 +401,7 @@ Q17: When migrating funds to or from ETH, why is the fee so high?
    </div>
    <div id="collapse34" class="collapse" aria-labelledby="heading34">
     <div class="card-body">
-A: Ethereum’s high gas fee has been a concern for many, and is a key hurdle in the platform’s scaling ability. The fee is not generated by Poly Bridge and solely depends on ethereum.
+A: Ethereum’s high gas fee has been a concern for many, and is a key hurdle with respect to the platform’s scalability. The transaction fee is not generated by Poly Bridge and solely depends on ethereum.
      </div>
     </div>
   </div>

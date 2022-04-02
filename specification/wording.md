@@ -30,14 +30,14 @@
 
 ## 中文名词翻译表
 
-| 中文名词        | 英文名词          |
-| --------------- | ----------------- |
+| 中文名词        | 英文名词              |
+| --------------- |-------------------|
 | 中继链          | Poly Chain        |
 | 要接入的侧链/新 | New Chain         |
 | 源链            | Source chain      |
 | 目标链          | Target Chain      |
-| 开发团队        | Poly Team         |
+| 开发团队        | `Poly team`         |
 | 上新的token     | Import new tokens |
-| 接入新链        | Add New Chain     |
+| 接入新链        | Connect New Chain |
 |                 |                   |
 
