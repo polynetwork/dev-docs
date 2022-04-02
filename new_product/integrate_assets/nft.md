@@ -16,7 +16,7 @@ Here are the three steps to follow to import an NFT.
   
   ```solidity 
   function mintWithURI(address to, uint256 tokenId, string memory uri) external {
-     require(!_exists(tokenId), "token id already exist");
+    require(!_exists(tokenId), "token id already exist");
     _safeMint(to, tokenId);
     _setTokenURI(tokenId, uri);
   }
