@@ -56,6 +56,49 @@ Example Response
   "BalanceWithPrecision": "2.9553450781056623352e+47"
 }
 ```
+
+Here are examples of other dApps using this API:
+
+[Chainswap](https://exchange.chainswap.com/#/bridge) ：Get transaction fee for crossing asset O3 from Ethereum chain to Binance chain
+```bash
+curl 'https://bridge.poly.network/v1/getfee' \
+  --data-raw '{"SrcChainId":2,"SwapTokenHash":"Ee9801669C6138E84bD50dEB500827b776777d28","Hash":"0000000000000000000000000000000000000000","DstChainId":6}'
+```
+Response
+```json
+{
+  "SrcChainId": 2,
+  "Hash": "0000000000000000000000000000000000000000",
+  "DstChainId": 6,
+  "UsdtAmount": "0.7102667879046",
+  "TokenAmount": "0.00021774",
+  "TokenAmountWithPrecision": "2.17745709200889804991497e+14",
+  "SwapTokenHash": "Ee9801669C6138E84bD50dEB500827b776777d28",
+  "Balance": "905253.1100058306801",
+  "BalanceWithPrecision": "9.052531100058306801e+23"
+}
+```
+
+[O3Swap](https://o3swap.com/hub) : Get transaction fee for crossing USDT from Polygon chain to Arbitrum chain
+```bash
+curl 'https://bridge.poly.network/v1/getfee' \
+  --data-raw '{"SrcChainId":17,"Hash":"0000000000000000000000000000000000000000","DstChainId":19}'
+```
+Response
+```json
+{
+  "SrcChainId": 17,
+  "Hash": "0000000000000000000000000000000000000000",
+  "DstChainId": 19,
+  "UsdtAmount": "6.24023692731448418039399",
+  "TokenAmount": "4.15070971",
+  "TokenAmountWithPrecision": "4.15070971868175230536829e+18",
+  "SwapTokenHash": "",
+  "Balance": "0",
+  "BalanceWithPrecision": "0"
+}
+```
+
 ### Get the cross chain transaction status
 This API returns the details of the assigned hash, and you can view the cross-chain procedure through the `TransactionState` in the response.  
 
