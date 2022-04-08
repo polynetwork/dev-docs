@@ -13,11 +13,11 @@ A successful cross-chain transaction requires the completion of the following 7 
 Find the browser in the wallet App, enter the URL: https://bridge.poly.network/, and go to the Token transaction page. 
 The figures below show an example in MetaMask.
 
-
 <figure class="half">
-    <img src="resources/img_57.png" alt="">
-    <img src="resources/img_58.png" alt="">
+<img src="resources/img_57.png">
+<img src="resources/img_58.png">
 </figure>
+
 
 ![img_57.png](img_57.png)
 ![img_58.png](img_58.png)
