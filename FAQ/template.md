@@ -90,7 +90,10 @@ Q1: How to integrate tokens onto Poly Bridge?
    </div>
    <div id="collapse9" class="collapse" aria-labelledby="heading9">
     <div class="card-body">
-A: Here is a <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a> instructing developers how to integrate token onto Poly Bridge.
+A: 
+ 
+ - For PC users, please refer to [PC User Manual for Token Transaction](../Core_Smart_Contract/User_Manuals/Token_Transaction.md).
+ - For MT users, please refer to [MT User Manual for Token Transaction](../Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md).
       </div>
     </div>
   </div>
@@ -106,7 +109,7 @@ Q2: Where can I find the contract?
    </div>
    <div id="collapse11" class="collapse" aria-labelledby="heading11">
     <div class="card-body">
-A: Here is an <a href="https://github.com/polynetwork/docs/tree/master/config">appendix</a> that includes basic contracts and some business contracts deployed and used by Poly Network, we encourage you to check it out.
+A: Here is an <a href="https://github.com/polynetwork/docs/tree/master/config">appendix</a> that includes basic contracts and some business contracts deployed and used by Poly Network, and we encourage you to check it out.
       </div>
     </div>
   </div>
@@ -137,7 +140,9 @@ Q2: How can I transfer my assets between two chains through Poly Bridge?
    </div>
    <div id="collapse13" class="collapse" aria-labelledby="heading13">
     <div class="card-body">
-A: Please refer to this <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a>.
+ 
+
+A: Please refer to these [manuals](../Core_Smart_Contract/User_Manuals) according to your needs.
       </div>
     </div>
   </div>
@@ -316,7 +321,9 @@ Q12: Can I use Poly Bridge via mobile devices?
    </div>
    <div id="collapse23" class="collapse" aria-labelledby="heading23">
     <div class="card-body">
-A: Sure you can! Here is the <a href="https://medium.com/poly-network/poly-bridge-mobile-version-is-officially-launched-95f24ecc93d6">manual</a> for mobile users.
+
+
+A: Sure you can! Here are the [NFT Transaction on MT](../Core_Smart_Contract/User_Manuals/NFT_Transaction_MT.md) and [Token Transaction on MT](../Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md) for mobile terminal users.
     </div>
     </div>
   </div>
