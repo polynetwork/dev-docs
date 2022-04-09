@@ -13,14 +13,10 @@ A successful cross-chain transaction requires the completion of the following 7 
 Find the browser in the wallet App, enter the URL: https://bridge.poly.network/, and go to the Token transaction page. 
 The figures below show an example in MetaMask.
 
-<figure class="half">
-<img src="resources/img_57.png">
-<img src="resources/img_58.png">
-</figure>
-
-
-![img_57.png](img_57.png)
-![img_58.png](img_58.png)
+<table><tr>
+<td><img src=img_57.png border=0></td>
+<td><img src=img_58.png border=0></td>
+</tr></table>
 
 
 
@@ -32,14 +28,17 @@ Find the button “Connect Wallet” in the top right corner of this page and co
 Make sure the network of your wallet stays consistent with that of the source chain you selected. 
 In this example, we have selected BNB as source chain, as shown in the figure:
 
-![img_59.png](img_59.png) ![img_60.png](img_60.png)
+<table><tr>
+<td><img src=img_59.png border=0></td>
+<td><img src=img_60.png border=0></td>
+</tr></table>
 
 
 ### Step3. Transaction Information Filling
 Select the Token you want to transfer (in Asset), the source chain (in From), the target chain (in To), and the amount of assets to be traded (in Amount) in order.
 
-![img_61.png](img_61.png)
-
+<div align="center">
+<img src="img_61.png"></div>
 
 > [!Note|style:flat|label:Notice]
 > A warning “You’ve exceeded the max amount” will pop up if you fill in the transaction amount without connecting to a wallet. 
@@ -48,7 +47,10 @@ Select the Token you want to transfer (in Asset), the source chain (in From), th
 ### Step4. Target Chain Wallet Connection
 After filling out the transaction information, click “Connect Wallet”, and then click on the target chain wallet to which you want to transfer Token to.
 
-![img_62.png](img_62.png) ![img_63.png](img_63.png)
+<table><tr>
+<td><img src=img_62.png border=0></td>
+<td><img src=img_63.png border=0></td>
+</tr></table>
 
 
 
@@ -56,18 +58,25 @@ After filling out the transaction information, click “Connect Wallet”, and t
 After connecting the target chain wallet, click “Next”, check the transaction information (including Token, source chain, target chain, transaction asset and fee) in the pop-up window, and click “Confirm”. 
 Then you need to submit the transaction in your wallet after checking.
 
-![img_64.png](img_64.png) ![img_65.png](img_65.png)
+<table><tr>
+<td><img src=img_64.png border=0></td>
+<td><img src=img_65.png border=0></td>
+</tr></table>
 
 > [!Note|style:flat|label:Notice]
 > If this is the first time you interact with Poly Bridge, before transaction submission, an approval is required (Approve Infinity or the amount you literally need).
 
-![img_66.png](img_66.png) ![img_67.png](img_67.png)
+<table><tr>
+<td><img src=img_66.png border=0></td>
+<td><img src=img_67.png border=0></td>
+</tr></table>
 
 ### Step6. Transaction Completion
 After the transaction is submitted, the progress of the transaction will be displayed on the page. 
 When all the three stages of the transaction are completed, the transaction is finished. 
 
-![img_68.png](img_68.png)
+<div align="center">
+<img src="img_68.png"></div>>
 
 
 > [!Note|style:flat|label:Notice]
@@ -80,7 +89,10 @@ You can swipe to the right to view the complete transaction history.
 And details of the assigned transaction can be viewed by clicking the status list. 
 For completed transactions, the status is displayed as “Finished”.
 
-![img_69.png](img_69.png) ![img_70.png](img_70.png)
+<table><tr>
+<td><img src=img_69.png border=0></td>
+<td><img src=img_70.png border=0></td>
+</tr></table>
 
 Congratulations! 
 You’ve completed your cross-chain token transaction in the mobile terminal!
