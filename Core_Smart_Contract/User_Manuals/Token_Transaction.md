@@ -49,11 +49,11 @@ When all the three stages of the transaction are completed, the transaction is f
 
 
 > [!Note|style:flat|label:Notice]
-> You can close the pop-up window any time during the transaction, and come back to check the transaction status in “History”.
+> You can close the pop-up window any time during the transaction, and come back to check the transaction status in “history”.
 
 
 ### Step6. Result Checking
-Click on “History” to view the record of processed transactions. 
+Click on “history” to view the record of processed transactions. 
 Details of the assigned transaction can be viewed by clicking the status list. 
 For completed transactions, the status is displayed as “Finished”.
 ![img_55.png](img_55.png)
