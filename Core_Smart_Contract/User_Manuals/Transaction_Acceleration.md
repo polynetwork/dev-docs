@@ -40,7 +40,7 @@ Now you can accelerate your transaction by clicking Speed Up or Pay and submitti
 If you encounter an error report as shown in the figure, please do not resubmit this transaction. Turn back to your wallet to check the balance.  
 <img alt="img_30.png" src="img_30.png"/>
 
-### Step4. Result checking
+### Step4. Accelerating
 After successfully submitting an accelerated transaction, you'll see a page as below, and please wait for a while.
 
 ![img_98.png](img_98.png)
