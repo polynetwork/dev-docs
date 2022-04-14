@@ -12,12 +12,12 @@ This user manual serves as a guide for transacting NFTs on the brand new Poly Br
 A successful cross-chain transaction requires the completion of the following 6 steps.
 
 
-### Step1. Wallet and Network Connection
+### Step1. Wallet and network connection
 Find the button “Connect Wallet” in the top right corner of this page and connect your wallet to the source chain from which you want to transfer NFT. Make sure the network of your wallet stays consistent with that of the source chain you selected. In this example, we have selected BNB Chain as source chain, as shown in the figure:
 ![img_36.png](img_36.png)
 ![img_37.png](img_37.png)
 
-### Step2. Transaction Information Selection
+### Step2. Transaction information selection
 Select the transaction information, including source chain (in From), the NFT asset you want to transfer (in Collection), the NFT item you want to transfer (in Item) and target chain (in To).
 ![img_38.png](img_38.png)
 
@@ -26,7 +26,7 @@ Select the transaction information, including source chain (in From), the NFT as
 > Additionally, make sure you indeed own the NFT collection you select or the transaction will not be processed.
 
 
-### Step3. Target Chain Wallet Connection
+### Step3. Target chain wallet connection
 After filling out the transaction information, click “Connect Wallet” below, and then click on the target chain wallet to which you want to transfer NFT.
 ![img_39.png](img_39.png)
 ![img_40.png](img_40.png)
@@ -35,12 +35,12 @@ After filling out the transaction information, click “Connect Wallet” below,
 > After successfully connecting the wallet, you should check again to see whether the transaction information listed above is complete and correct.
 
 
-### Step4. Transaction Authorization
+### Step4. Transaction authorization
 Click “Approve”. You should check the approved information in your wallet, and then click “Confirm”.
 ![img_41.png](img_41.png)
 
 
-### Step5. Transaction Information Confirmation and Transaction Completion
+### Step5. Transaction information confirmation and transaction completion
 Click “Next” and check the transaction information. 
 Click “Confirm” in the pop-up window, and click “Confirm” in the wallet to submit the transaction.
 ![img_42.png](img_42.png)
@@ -55,7 +55,7 @@ When all the three transaction stages are completed, the transaction is finished
 > You can close the pop-up window at any time during the process, and check the transaction status in “history”.
 
 
-### Step6. Results Checking
+### Step6. Results checking
 Click on “history” to view the record of processed transactions. 
 Details of the assigned transaction can be viewed by clicking on the status list. 
 For completed transactions, the status is displayed as “Finished”.

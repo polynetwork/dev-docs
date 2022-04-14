@@ -10,11 +10,11 @@ This user manual serves as a guide for transacting NFTs on the brand new Poly Br
 A successful cross-chain transaction requires the completion of the following 8 steps.
 
 
-### Step1. Installing A Wallet APP
+### Step1. Installing a wallet APP
 You are required to install a wallet APP to access cross-chain service on Poly Bridge with your mobile terminals. As an example, this manual uses the NFT transaction between Polygon and BNB chain in MetaMask.
 
 
-### Step2. Entering PolyBridge Page
+### Step2. Entering PolyBridge page
 Find the browser in the wallet App, enter the URL: https://bridge.poly.network/nft, and go to the NFT transaction page. The figures below show an example in MetaMask.
 
 <table><tr>
@@ -26,7 +26,7 @@ Find the browser in the wallet App, enter the URL: https://bridge.poly.network/n
 > [!Note|style:flat|label:Notice]
 > The following steps are the same as that in the [NFT Transaction on PC](../../Core_Smart_Contract/User_Manuals/NFT_Transaction.md).
 
-### Step3. Wallet and Network Connection
+### Step3. Wallet and network connection
 Find the button “Connect Wallet” in the top right corner of this page and connect your wallet to the source chain from which you want to transfer NFT. 
 Make sure the network of your wallet stays consistent with that of the source chain you selected. 
 In this example, we have selected Polygon as source chain, as shown in the figure:
@@ -37,7 +37,7 @@ In this example, we have selected Polygon as source chain, as shown in the figur
 </tr></table>
 
 
-### Step4. Transaction Information Selection
+### Step4. Transaction information selection
 Select the transaction information, including source chain (in From), the NFT asset you want to transfer (in Collection), the NFT item you want to transfer (in Item) and target chain (in To).
 
 <div align="center">
@@ -48,7 +48,7 @@ Select the transaction information, including source chain (in From), the NFT as
 > The transaction will fail to process if the network of your wallet is inconsistent with that of the source chain. Additionally, make sure you indeed own the NFT collection you select or the transaction will not be processed.
 
 
-### Step5. Target Chain Wallet Connection
+### Step5. Target chain wallet connection
 After filling out the transaction information, click “Connect Wallet” below, and then click on the target chain wallet to which you want to transfer NFT.
 
 <table><tr>
@@ -59,7 +59,7 @@ After filling out the transaction information, click “Connect Wallet” below,
 > [!Note|style:flat|label:Notice]
 > After successfully connecting the wallet, you should check again to see whether the transaction information listed above is complete and correct.
 
-### Step6. Transaction Authorization
+### Step6. Transaction authorization
 Click “Approve”. 
 You should check the approved information in your wallet, and then click “Approve”.
 
@@ -69,7 +69,7 @@ You should check the approved information in your wallet, and then click “Appr
 </tr></table>
 
 
-### Step7. Transaction Information Confirmation and Transaction Completion
+### Step7. Transaction information confirmation and transaction completion
 Click “Next” and check the transaction information. 
 Click “Confirm” in the pop-up window, and click “Confirm” in the wallet to submit the transaction.
 
@@ -88,7 +88,7 @@ When all the three transaction stages are completed, the transaction is finished
 <img src="img_82.png"></div>
 
 
-### Step8. Results Checking
+### Step8. Results checking
 Click on “history” to view the record of processed transactions.
 You can swipe to the right to view the complete transaction history.
 Details of the assigned transaction can be viewed by clicking on the status list. 
