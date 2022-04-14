@@ -90,10 +90,14 @@ Q1: How to integrate tokens onto Poly Bridge?
    </div>
    <div id="collapse9" class="collapse" aria-labelledby="heading9">
     <div class="card-body">
-A: Here is a <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a> instructing developers how to integrate token onto Poly Bridge.
+A: 
+<ul>
+   <li>For PC users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction.md">PC User Manual for token Transaction</a>.</li>
+   <li>For MT users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md">MT User Manual for Token Transaction</a>.</li>
+</ul>     
+       </div>
       </div>
-    </div>
-  </div>
+     </div>
 
 
 <div class="card">
@@ -106,7 +110,7 @@ Q2: Where can I find the contract?
    </div>
    <div id="collapse11" class="collapse" aria-labelledby="heading11">
     <div class="card-body">
-A: Here is an <a href="https://github.com/polynetwork/docs/tree/master/config">appendix</a> that includes basic contracts and some business contracts deployed and used by Poly Network, we encourage you to check it out.
+A: Here is an <a href="https://github.com/polynetwork/docs/tree/master/config">appendix</a> that includes basic contracts and some business contracts deployed and used by Poly Network, and we encourage you to check it out.
       </div>
     </div>
   </div>
@@ -137,7 +141,9 @@ Q2: How can I transfer my assets between two chains through Poly Bridge?
    </div>
    <div id="collapse13" class="collapse" aria-labelledby="heading13">
     <div class="card-body">
-A: Please refer to this <a href="https://medium.com/poly-network/poly-bridge-personal-computer-user-manual-1d093350e9ac">manual</a>.
+ 
+
+A: Please refer to these <a href="../Core_Smart_Contract/User_Manuals/NFT_Transaction.md">manuals</a> according to your needs.
       </div>
     </div>
   </div>
@@ -204,7 +210,7 @@ A: Please check which step of the transaction process your transfer has reached.
 <ul>
  <li>The transaction hasn't been completed on the source chain：For safety reasons, Poly Bridge will not confirm your transaction immediately until subsequent blocks have been confirmed (the number of subsequent blocks is different for different chains), please wait for block confirmation.</li>
  <li>The transaction has been completed on the source chain, but not completed on Poly: if the transaction has been stuck in this step for over 5 min, please do not hesitate to contact the Poly Network Team.</li>
- <li>The transaction hasn't been completed on the target chain: it’s perhaps down to the transaction congestion of the target chain, please wait for a while or refer to the accelerated transaction <a href="https://medium.com/poly-network/poly-bridge-new-acceleration-function-pc-user-manual-cd0b6cacceea">tutorial</a>. If the accelerated tutorial doesn't help you, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
+ <li>The transaction hasn't been completed on the target chain: it’s perhaps down to the transaction congestion of the target chain, please wait for a while or refer to the accelerating transaction <a href="../Core_Smart_Contract/User_Manuals/Transaction_Acceleration.md">tutorial</a>. If the accelerated tutorial doesn't help you, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
 </ul>
 </div>
     </div>
@@ -316,7 +322,9 @@ Q12: Can I use Poly Bridge via mobile devices?
    </div>
    <div id="collapse23" class="collapse" aria-labelledby="heading23">
     <div class="card-body">
-A: Sure you can! Here is the <a href="https://medium.com/poly-network/poly-bridge-mobile-version-is-officially-launched-95f24ecc93d6">manual</a> for mobile users.
+
+
+A: Sure you can! Here are the <a href="../Core_Smart_Contract/User_Manuals/NFT_Transaction_MT.md">NFT Transaction on MT</a> and <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md">Token Transaction on MT</a> for mobile terminal users.
     </div>
     </div>
   </div>

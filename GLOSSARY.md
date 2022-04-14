@@ -33,3 +33,16 @@ A block is included in the primary blockchain and is directly or indirectly refe
 ##  Cross Chain Council
 
 A Council formed by poly consensus nodes.
+
+## Total Volume
+
+The total volume of transaction processed in Poly, accounting both inflows and outflows.
+
+## Total Volume Locked 
+
+Total volume locked is a figure that represents the spot value (usually in fiat terms i.e. USD) for all the assets that are currently staked in a specific protocol on Poly.
+
+## Total Inbound Assets
+
+The total volume of assets transferred into this chain. 
+

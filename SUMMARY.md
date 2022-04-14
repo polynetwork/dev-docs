@@ -20,8 +20,10 @@
   
 ----
 ### User Manuals
-* [Token Transaction](Core_Smart_Contract/User_Manuals/Token_Transaction.md)
-* [NFT Transaction](Core_Smart_Contract/User_Manuals/NFT_Transaction.md)
+* [NFT Transaction on PC](Core_Smart_Contract/User_Manuals/NFT_Transaction.md)
+* [NFT Transaction on MT](Core_Smart_Contract/User_Manuals/NFT_Transaction_MT.md)
+* [Token Transaction on PC](Core_Smart_Contract/User_Manuals/Token_Transaction.md)
+* [Token Transaction on MT](Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md)
 * [Transaction Acceleration](Core_Smart_Contract/User_Manuals/Transaction_Acceleration.md)
 ----
 ### Appendix

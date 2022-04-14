@@ -1,81 +1,65 @@
-<h1 align="center">Token Transaction</h1>
+<h1 align="center">Token Transaction on PC</h1>
 
-This is the user manual for token transactions on personal computers. 
-Here are five steps listed to complete the cross-chain transaction on [Poly Bridge](https://bridge.poly.network/).
-We take the token transaction between Metis and BSC on Poly Bridge as an example for your better understanding.
 
-At the very beginning, make sure you have entered [Token Asset](https://bridge.poly.network/testnet/) of Poly Bridge.
-
-### Step 1. Asset selection
-
-Firstly, you need to select the token you want to transfer. 
-As shown in the figures, click Asset, then you can choose the token in the pop window.
-<img alt="img_14.png" src="img_14.png"/>
-<img alt="img_16.png" src="img_16.png"/>
-
-### Step 2. Network selection
-
-After asset selection, click **From Network**, and select the source network containing the chosen token in the pop window. 
-Select the target network in the same way. 
-<img alt="img_17.png" src="img_17.png"/>
+Poly Network has released Poly Bridge version 2.0 recently, significantly optimizing the interface and improving functionality based on 1.0. 
+This user manual serves as a guide for transacting Tokens on the brand new Poly Bridge 2.0.
 
 > [!Note|style:flat|label:Notice]
-> The optional network shown in this figure is the network types supported by the Metis token. Please choose it according to the actual situation.
+> To enter the Poly Bridge 2.0 interface, please click [PolyBridge](https://bridge.poly.network/) and go to the Token transaction page. 
+> As an example, this manual uses the Token transaction between BNB chain and Ethereum. 
 
-Here the figure indicates that Metis token will be sent from Metis to the target network BSC.
-<img alt="img_18.png" src="img_18.png"/>
+A successful cross-chain transaction requires the completion of the following 6 steps.
 
-### Step 3. Wallet connection
+### Step1. Wallet and network connection
+Find the button “Connect Wallet” in the top right corner of this page and connect your wallet of the source chain from which you want to transfer Token. 
+Make sure the network of your wallet stays consistent with that of the source chain you selected. 
+In this example, we have selected BNB as source chain, as shown in the figure:
+![img_47.png](img_47.png)
+![img_48.png](img_48.png)
 
-The next step is to connect the wallet. 
-You can click **Connect Wallet** or the **wallet icon** to connect your wallet.  
-The difference is that clicking **Connect Wallet** will enable you to select wallets both on the source and target network, as shown in the latter figure.
+### Step2. Transaction information filling
+Select the Token you want to transfer (in Asset), the source chain (in From), the target chain (in To), and the amount of assets to be traded (in Amount) in order.
+![img_49.png](img_49.png)
 
-<img alt="img_35.png" src="img_35.png"/>
-<img alt="img_32.png" src="img_32.png"/>
 
 > [!Note|style:flat|label:Notice]
-Different networks support different wallets, and the current support status is shown in the table.
+> A warning “You’ve exceeded the max amount” will pop up if you fill in the transaction amount without connecting to a wallet. 
+> Then click “Connect Wallet” to connect the source chain and the target chain wallets. 
 
-| **Network**             | 	**Wallet**           |
-|-------------------------|-----------------------|
-| ETH	                    | Metamask/Math         |
-| BSC	                    | Metamask/Binance/Math |
-| HECO/OK/Polygon/Metis   | Metamask              |
-| Neo	                    | Metis/Neoline         |
-| Ontology                | 	Cyano                |
 
-> [!Note|style:flat|label:Notice]
-> If the warning "**Please switch network**" appears, you should switch the network of wallet to keep consistent with the source network.
+### Step3. Target chain wallet connection
+After filling out the transaction information, click “Connect Wallet”, and then click on the target chain wallet to which you want to transfer Token to.
+![img_50.png](img_50.png)
+![img_51.png](img_51.png)
 
-<img alt="img_23.png" src="img_23.png"/>
 
-### Step 4.	Transaction submission
-
-Enter the amount you plan to swap, then click **Next**. 
-A pop window will appear to show the details of the transaction. 
-Please check it carefully. 
-
-If you make sure the transaction information is correct， you can click **Confirm** to submit the transaction and confirm it again.
-<img alt="img_24.png" src="img_24.png"/>
+### Step4. Transaction information confirmation
+After connecting the target chain wallet, click “Next”, check the transaction information (including Token, source chain, target chain, transaction asset and fee) in the pop-up window, and click “Confirm”. 
+Then you need to submit the transaction in your wallet after checking.
+![img_52.png](img_52.png)
+![img_53.png](img_53.png)
 
 > [!Note|style:flat|label:Notice]
-> If this is your first swap, an approval operation is required before transaction submission. 
-> Approve Infinity or not depends on your actual situation.
+> If this is the first time you interact with Poly Bridge, before transaction submission, an approval is required (Approve Infinity or the amount you literally need).
 
-### Step 5. Transaction checking
-
-After the submission, you can view the transaction result in **History**. 
-When the transaction details are displayed in the figure, the transaction has been completed.
-
-<img alt="img_25.png" src="img_25.png"/>
-
-Congratulations! Till now, you've completed your token transaction, and you can continue your cross-chain journey!
+### Step5. Transaction completion
+After the transaction is submitted, the progress of the transaction will be displayed on the page. 
+When all the three stages of the transaction are completed, the transaction is finished.
+![img_54.png](img_54.png)
 
 
+> [!Note|style:flat|label:Notice]
+> You can close the pop-up window any time during the transaction, and come back to check the transaction status in “history”.
 
 
+### Step6. Result checking
+Click on “history” to view the record of processed transactions. 
+Details of the assigned transaction can be viewed by clicking the status list. 
+For completed transactions, the status is displayed as “Finished”.
+![img_55.png](img_55.png)
+![img_56.png](img_56.png)
 
+Congratulations! You’ve completed your cross-chain token transaction!
 
 
 
