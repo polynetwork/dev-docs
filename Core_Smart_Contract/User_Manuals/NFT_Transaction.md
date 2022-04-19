@@ -11,6 +11,21 @@ This user manual serves as a guide for transacting NFTs on the brand new Poly Br
 
 A successful cross-chain transaction requires the completion of the following 6 steps.
 
+You can either watch the video or follow the manual below.
+
+<html>
+<body>
+
+<video width="800" height="480" controls="controls">
+  <source src="Video for NFT Transaction.mp4" type="video/mp4">
+  <object data="Video for NFT Transaction.mp4" width="800" height="480">
+    <embed width="800" height="480" src="Video for NFT Transaction.swf">
+  </object>
+
+</video>
+
+</body>
+</html>
 
 ### Step1. Wallet and network connection
 Find the button “Connect Wallet” in the top right corner of this page and connect your wallet to the source chain from which you want to transfer NFT. Make sure the network of your wallet stays consistent with that of the source chain you selected. In this example, we have selected BNB Chain as source chain, as shown in the figure:
