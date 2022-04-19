@@ -1,17 +1,17 @@
-<h1 align="center">NFT Transaction on MT</h1>
+<h1 align="center">NFT Transaction on MD</h1>
 
 
 Poly Network has released Poly Bridge version 2.0 recently, significantly optimizing the interface and improving functionality based on 1.0. 
-This user manual serves as a guide for transacting NFTs on the brand new Poly Bridge 2.0 with your mobile terminals.
+This user manual serves as a guide for transacting NFTs on the brand new Poly Bridge 2.0 with your mobile devices.
 
 > [!Note|style:flat|label:Notice]
-> Currently the transaction between Ontology and Neo is not supported in mobile terminals.
+> Currently the transaction between Ontology and Neo is not supported in mobile devices.
 
 A successful cross-chain transaction requires the completion of the following 8 steps.
 
 
 ### Step1. Installing a wallet APP
-You are required to install a wallet APP to access cross-chain service on Poly Bridge with your mobile terminals. As an example, this manual uses the NFT transaction between Polygon and BNB chain in MetaMask.
+You are required to install a wallet APP to access cross-chain service on Poly Bridge with your mobile devices. As an example, this manual uses the NFT transaction between Polygon and BNB chain in MetaMask.
 
 
 ### Step2. Entering PolyBridge page
@@ -96,10 +96,9 @@ For completed transactions, the status is displayed as “Finished”.
 
 <table><tr>
 <td><img src=img_83.png border=0></td>
-<td><img src=img_84.png border=0></td>
+<td><img src=img_100.png border=0></td>
 </tr></table>
 
-
 Congratulations! 
-You’ve now completed your cross-chain NFT transaction in the mobile terminal!
+You’ve now completed your cross-chain NFT transaction in the mobile device!
 

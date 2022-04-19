@@ -10,6 +10,22 @@ This user manual serves as a guide for transacting Tokens on the brand new Poly 
 
 A successful cross-chain transaction requires the completion of the following 6 steps.
 
+You can either watch the video or follow the manual below.
+
+<html>
+<body>
+
+<video width="800" height="480" controls="controls">
+  <source src="Video for Token Transaction.mp4" type="video/mp4">
+  <object data="Video for Token Transaction.mp4" width="800" height="480">
+    <embed width="800" height="480" src="Video for Token Transaction.swf">
+  </object>
+
+</video>
+
+</body>
+</html>
+
 ### Step1. Wallet and network connection
 Find the button “Connect Wallet” in the top right corner of this page and connect your wallet of the source chain from which you want to transfer Token. 
 Make sure the network of your wallet stays consistent with that of the source chain you selected. 
