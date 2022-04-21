@@ -114,7 +114,7 @@ A methods is required to parse and execut the transaction information transferre
 function verifyHeaderAndExecuteTx (bytes memory proof, bytes memory rawHeader, bytes memory headerProof, bytes memory curRawHeader, bytes memory headerSig) whenNotPaused public returns (bool);
 ````
 
-- The customized method shoud be conformed to the format called by `verifyHeaderAndExecuteTx`, see following:
+- The customized method should be confirmed to the format called by `verifyHeaderAndExecuteTx`, see following:
 
 ```solidity
  // The returnData will be bytes32, the last byte must be 01;
