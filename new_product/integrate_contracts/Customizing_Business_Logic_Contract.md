@@ -115,12 +115,12 @@ function verifyHeaderAndExecuteTx (bytes memory proof, bytes memory rawHeader, b
 ````
 
 - The customized method shoud be conformed to the format called by `verifyHeaderAndExecuteTx`, see following:
-````solidity
+
+```solidity
  // The returnData will be bytes32, the last byte must be 01;
 (success, returnData) = _toContract.call(abi.encodePacked(bytes4(keccak256(abi.encodePacked(_method, "(bytes,bytes,uint64)"))), abi.encode(_args, _fromContractAddr, _fromChainId)))
 
-````
-
+```
 
 #### Example:
 
