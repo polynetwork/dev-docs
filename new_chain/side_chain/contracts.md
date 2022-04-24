@@ -26,7 +26,7 @@ In general, cross-chain contracts are sorted into **logic**, **data**, and **pro
 
 <div align=center><img src="resources/contracts_interaction.png" alt=""/></div>
 
-## 2. Developing CCM Contracts
+## 2. Developing CCM Module
 
 The following four features are the core functions of CCM contracts and must be implemented.
 
