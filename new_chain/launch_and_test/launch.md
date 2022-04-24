@@ -9,6 +9,7 @@ There are two steps to test the interaction between your chain and Poly chain.
 DevNet for developers provides debugging and testing for your code. The access steps are as follows:
 
 - Propose a request to submit code developed for Poly chain to [GitHub](https://github.com/polynetwork/poly.git ) and wait for code review.
+- Propose a request to submit code developed for the register tool to [Github](https://github.com/polynetwork/poly-io-test.git) and wait for code review.
 - Propose a request to submit code developed for the new chain to [Github](https://github.com/polynetwork/eth-contracts) and wait for code review.
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLScJrZSANf3s7rTJ1BPTE8c6sUU55B1mtBGXe3YCY84i26R1UQ/viewform) the Cross-chain contracts hash you have deployed and the RPC that can connect your chain, then wait for the `Poly team` to allocate chain ID and router number.
 - Register to Poly Chain and sync genesis block header. The details are as follows:
@@ -64,6 +65,7 @@ DevNet for developers provides debugging and testing for your code. The access s
 ### 1.2 Test on TestNet
 Here is TestNet provided for developers to test the interaction between chains. The access to TestNet is almost the same as that of DevNet,
 - Propose a request to submit code developed for the Poly chain to [Github ](https://github.com/polynetwork/poly.git )and wait for code review.
+- Propose a request to submit code developed for the register tool to [Github](https://github.com/polynetwork/poly-io-test.git) and wait for code review.
 - Propose a request to submit code developed for the new chain to [Github](https://github.com/polynetwork/eth-contracts.git) and wait for code review.
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLSeRwJPk1_s94Ex92IdnFkdtJQQC8Mc2CUhvXX-MNzeCWHk6zA/viewform) the cross-chain contract hash, RPC, chain name to Poly.
 - Register to Poly Chain and `sync genesis block header` on Poly TestNet. The detail is consistent with DevNet and is also completed by Poly Network.
