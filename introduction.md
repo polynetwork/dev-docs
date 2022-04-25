@@ -8,7 +8,7 @@ Poly Network has integrated over 20 blockchains, including Ethereum, BNB Chain, 
 <div align=center><img src="resources/ecosystem.png" alt=""/></div>
 ## Poly Network provides
 
-- A Protocol for connecting new chains to the poly cross-chain ecosystem
+- A Protocol for connecting new chains to Poly Network
 - A Protocol for registering new cross-chain tokens
 - A Protocol for building your bridges
 - Specifications for customizing business logic contracts

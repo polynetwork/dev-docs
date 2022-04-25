@@ -14,11 +14,11 @@ DevNet for developers provides debugging and testing for your code. The access s
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLScJrZSANf3s7rTJ1BPTE8c6sUU55B1mtBGXe3YCY84i26R1UQ/viewform) the Cross-chain contracts hash you have deployed and the RPC that can connect your chain, then wait for the `Poly team` to allocate chain ID and router number.
 - Register to Poly Chain and sync genesis block header. The details are as follows:
 
-  - **Register to Poly Chain**
-  1. Call entry function `RegisterSideChain`
-  2. Call entry function `ApproveRegisterSideChain`
-  - **Sync genesis block header**
-  1. Call entry function `SyncSideChainGenesisHeader`
+  - Register to Poly Chain
+    - Call entry function `RegisterSideChain`
+    - Call entry function `ApproveRegisterSideChain`
+  - Sync genesis block header
+    - Call entry function `SyncSideChainGenesisHeader`
 
 > [!Note|style:flat|label:Notice]
 > Registration is currently completed by the `Poly team` with the trusted account.

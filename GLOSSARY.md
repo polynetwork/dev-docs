@@ -3,7 +3,7 @@
 A relayer is a cross-chain information porter that performs some of the most critical cross-chain operations. It acts as the medium of interaction between the side chain and the outside world.
 
 Each chain in the cross-chain ecosystem has a relayer associated with it. A relayer monitors its corresponding chain network for cross-chain transactions and forwards detected block headers to the Poly chain, motivated by incentives which it receives in the process.
-Simultaenously, a relayer monitors cross-chain transactions taking place on the Poly chain and transfers them to the respective side chain.
+Simultaneously, a relayer monitors cross-chain transactions taking place on the Poly chain and transfers them to the respective side chain.
 
 
 ## Source Chain
