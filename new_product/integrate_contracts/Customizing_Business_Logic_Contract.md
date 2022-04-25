@@ -153,8 +153,8 @@ function unlock(bytes memory argsBs, bytes memory fromContractAddr, uint64 fromC
 ```
 
 - The mapping relationship of business logic contracts needs to be checked in `proxyHashMap`.
-- The function `unlock` is used to deserialize and excute the transaction data `argsBs`, i.e., to transfer a certain amount of token to the target address on the target chain.
-- For safety, the function `unlock` only can be called by the [CCM contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManager.sol). In this case, the modifier `onlyManagerContract` restricts the calling authority by obtaining the CCM contract address of CCM in CCMP contract. While the function `setManagerProxy` is uesd to set the [CCMP contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManagerProxy.sol) address. See following:
+- The function `unlock` is used to deserialize and execute the transaction data `argsBs`, i.e., to transfer a certain amount of token to the target address on the target chain.
+- For safety, the function `unlock` only can be called by the [CCM contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManager.sol). In this case, the modifier `onlyManagerContract` restricts the calling authority by obtaining the CCM contract address of CCM in CCMP contract. While the function `setManagerProxy` is used to set the [CCMP contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManagerProxy.sol) address, as shown in follows:
 
 ```solidity
     modifier onlyManagerContract() {

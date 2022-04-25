@@ -1,12 +1,12 @@
 <h1 align="center">Develop for Poly Chain</h1>
 
 
-This section shows you how Poly chain can verify cross-chain transactions from your chain. 
+This step shows you how Poly Chain verifies cross-chain transactions from your chain. 
 Verification by synchronizing block headers is the most common method.
 The tutorial below will describe how to implement this method in detail.
 
 > [!Note|style:flat|label:Notice]
-> If your chain **doesn't** support the method of verification by synchronizing block headers (i.e., your chain can not meet the prerequisites listed)，
+> If your chain **doesn't** support the method of verification by synchronizing block headers (i.e., your chain fails to meet the prerequisites listed),
 > here are also other solutions,
 > and please contact `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> for more support.
 
@@ -31,9 +31,9 @@ There are four steps to be implemented for the verification method.
 
 ### Step1. Adding a router for your chain
 
-When importing your chain to poly chain, the first thing you need to do is to add a router for your chain in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/utils/params.go#L43). 
+When importing your chain to Poly Chain, the first thing you need to do is to add a router for your chain in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/utils/params.go#L43). 
 
-### Step2 Implement the interface of block header synchronization
+### Step2 Implementing the interface of block header synchronization
 
 - First, corresponding handler should be added in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/entrance.go#L62).
 - Second, implement the method for the interface of HeaderSyncHandler, as shown in follows:
@@ -49,11 +49,11 @@ type HeaderSyncHandler interface {
 | Method                  | Description                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **SyncGenesisHeader**   | This method is used to store the initial block header so that the subsequent block headers of blocks that contain cross-chain events can be verified and synchronized. This method will only be called for **once** in initializing the new chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L61) for more details. |
-| **SyncBlockHeader**     | This method is used to synchronize block headers consistently from the new chain to the Poly chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L99) for more details.                                                                                                                                                |
+| **SyncBlockHeader**     | This method is used to synchronize block headers consistently from the new chain to Poly Chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L99) for more details.                                                                                                                                                    |
 | **SyncCrossChainMsg**   | This method is used to fetch cross chain message. Please refer to the ontology [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/ont/header_sync.go#L106) or eth [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/eth/header_sync.go#L216) for more details.  |
 
 
-### Step3. Implement the interface of cross chain management
+### Step3. Implementing the interface of cross chain management
 
 - First, corresponding handler is needed to be add in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/cross_chain_manager/entrance.go#L61).
 - Second, implement the method for the interface of ChainHandler, as shown in follows:
@@ -64,9 +64,9 @@ type ChainHandler interface {
 }
 ```
 
-| Method                  | Description                                                                                                                                                                                                                                                                          |
-|-------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **MakeDepositProposal** | This method is used to verify the legitimacy of cross-chain transactions and store legitimate transactions to the Poly chain.Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/cross_chain_manager/eth/eth_handler.go#L34) for more details. |
+| Method                  | Description                                                                                                                                                                                                                                                                       |
+|-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **MakeDepositProposal** | This method is used to verify the legitimacy of cross-chain transactions and store legitimate transactions to Poly Chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/cross_chain_manager/eth/eth_handler.go#L34) for more details. |
 
 The return struct [**MakeTxParam**](https://github.com/polynetwork/poly/blob/1e629995982e61930e962e84606998f15233c534/native/service/cross_chain_manager/common/param.go#L148) is used for subsequent notification that the transaction has been verified. 
 
@@ -82,11 +82,11 @@ type MakeTxParam struct {
 }
 ```
 
-In the reference example of the function **MakeDepositProposal**, there are two functions (**verifyFromTx** and **verifyMerkleProof**) that play an important role in cross-chain verification.
+In the example of the function **MakeDepositProposal**, there are two functions (**verifyFromTx** and **verifyMerkleProof**) that play an important role in cross-chain verification.
 
-| Method            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|-------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **verifyFromTx**  | This method is used to get the synchronized block header from the database stored in the Poly chain, and then to call the function **verifyMerkleProof** to verify the legitimacy of cross-chain transaction, and decode the [Extra data](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/cross_chain_manager/common/param.go#L68) to construct MakeTxParam.Please refer to the [code](https://github.com/polynetwork/poly/blob/4323af5cfcd2a3277653d5bdc4db015cd9755fee/native/service/cross_chain_manager/eth/utils.go#L41) for more details. |
+| Method            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **verifyFromTx**  | This method is used to get the synchronized block header from the database stored in Poly Chain, and then to call the function **verifyMerkleProof** to verify the legitimacy of cross-chain transaction, and decode the [Extra data](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/cross_chain_manager/common/param.go#L68) to construct MakeTxParam. Please refer to the [code](https://github.com/polynetwork/poly/blob/4323af5cfcd2a3277653d5bdc4db015cd9755fee/native/service/cross_chain_manager/eth/utils.go#L41) for more details. |
 
 ```go
 /*  
@@ -115,12 +115,12 @@ func VerifyMerkleProof(ethProof *ETHProof, blockData *eth.Header, contractAddr [
 
 ### Step4. Developing for register tool
 
-The final step to import your chain is to register your chain in Poly chain and synchronize zion genesis header to your chain. 
+The final step to import your chain is to register your chain in Poly Chain and synchronize zion genesis header to your chain. 
 There are two methods required, as shown in follows:
 
 | Method                    | Description                                                                                                                                                                                                                                                        |
 |---------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **RegisterSideChain**     | This method is used to register your chain in Poly chain.Please refer to the code for more details..Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/035b7fadee297e6e1b5a0b3dcde80f22442d8fb1/cmd/tools/run.go#L1765) for more details. |
-| **SyncPolyGenesisHeader** | This method is used to achieve two-way synchronization of genesis block headers between Poly chain and your chain.Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/master/cmd/tools/run.go#L607) for more details.                      |
+| **RegisterSideChain**     | This method is used to register your chain in Poly Chain. Please refer to the code for more details.. Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/035b7fadee297e6e1b5a0b3dcde80f22442d8fb1/cmd/tools/run.go#L1765) for more details. |
+| **SyncPolyGenesisHeader** | This method is used to achieve two-way synchronization of genesis block headers between Poly Chain and your chain. Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/master/cmd/tools/run.go#L607) for more details.                      |
 
-Now, the development for Poly chain is completed.
+Now, the development for Poly Chain is completed.

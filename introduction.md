@@ -1,12 +1,12 @@
 <h1 align="center">Poly Network</h1>
 
-**Poly Network** is the world’s leading cross-chain interoperability for heterogeneous chains, enhancing connections between ledgers by providing Web 3.0 interoperability. 
+**Poly Network** is the world’s leading cross-chain protocol for heterogeneous chains, enhancing connections between ledgers by providing Web 3.0 interoperability. 
 Its uniquely designed cross-chain bridge technology executes cross-chain transactions by deploying smart contracts on the source chain. This enables communication between heterogeneous chains, including the most popular public chains, right at the protocol layer.
 
 Poly Network has integrated over 20 blockchains, including Ethereum, BNB Chain, Polygon, Avalanche, Fantom, Arbitrum, Optimism, Metis, Boba, OKC, HECO, Neo, Ontology, Zilliqa, Gnosis Chain, etc.
 
 <div align=center><img src="resources/ecosystem.png" alt=""/></div>
-## Poly Network provides
+## Poly Network Provides
 
 - A Protocol for connecting new chains to Poly Network
 - A Protocol for registering new cross-chain tokens

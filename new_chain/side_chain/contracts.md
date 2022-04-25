@@ -32,7 +32,7 @@ The following four features are the core functions of CCM contracts and must be 
 
 ### Step1. Synchronizing genesis block header
 
-This step is meant to implement the methods of synchronizing the genesis block header of the Poly chain to the CCM contract. 
+This step is meant to implement the methods of synchronizing the genesis block header of Poly Chain to the CCM contract. 
 
 #### Example:
 
@@ -71,7 +71,7 @@ function initGenesisBlock(bytes memory rawHeader, bytes memory pubKeyList) whenN
 
 ### Step2. Changing consensus validator
 
-This step is meant to implement the methods of changing the Poly Chain consensus validator, which is called `BookKeeper` in the code. 
+This step is meant to implement the methods of changing Poly Chain consensus validator, which is called `BookKeeper` in the code. 
 
 #### Example:
 
@@ -121,7 +121,7 @@ function changeBookKeeper(bytes memory rawHeader, bytes memory pubKeyList, bytes
 
 ### Step3. Pushing transactions
 
-This step is meant to implement the methods of pushing the serialized cross-chain transaction information to the Poly chain.
+This step is meant to implement the methods of pushing the serialized cross-chain transaction information to Poly Chain.
 
 #### Example:
 
@@ -270,7 +270,7 @@ function _executeCrossChainTx(address _toContract, bytes memory _method, bytes m
 
 - The relayer should invoke this method. In some circumstances, users can invoke this method by themselves if they get the valid block information from Poly.
 - This method fetches and processes **cross-chain transactions**, finds the **Merkle root of a transaction** based on the block height (in the block header), and verifies the **transaction's legitimacy** using the transaction parameters.
-- After verifying the Poly chain block header and proof, you still need to check if the parameters `toContract` and `toMerkleValue.makeTxParam.method` have been listed in whitelists.
+- After verifying Poly Chain block header and proof, you still need to check if the parameters `toContract` and `toMerkleValue.makeTxParam.method` have been listed in whitelists.
 - The business logic contract deployed on the target chain is then invoked, which processes the business logic contract through the internal method `_executeCrossChainTx()`:
     - This method is meant to invoke the target contract and trigger the execution of cross-chain tx on the target chain.
     - Firstly, you need to ensure that the target contract is waiting to invoke a contract rather than a standard account address.

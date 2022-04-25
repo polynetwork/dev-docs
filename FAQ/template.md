@@ -34,7 +34,7 @@ Poly Network has integrated over 18 blockchains, including Ethereum, BNB Chain, 
     <div class="card-header" id="heading33">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
-Q2: Is Poly Network related to Polygon, Polymath, or Poly chain Capital?
+Q2: Is Poly Network related to Polygon, Polymath, or Poly Chain Capital?
 </button>
       </h5>
    </div>
@@ -285,7 +285,7 @@ Q10: When I click MAX, why is the amount of transferable tokens lower than my ov
     <div class="card-body">
 A: This is a result of the following three conditions:
 <ol>
-<li>Poly bridge reserves transaction fees for both src chain and target chain for users (Tips: the fee will be reserved only when the transferred token is a native token). So, the transferable token amount doesn't equal to your account balance.</li>
+<li>Poly Bridge reserves transaction fees for both src chain and target chain for users (Tips: the fee will be reserved only when the transferred token is a native token). So, the transferable token amount doesn't equal to your account balance.</li>
 <li>Some tokens have their own characteristics that limit the transfer amount, so you may not be able to transfer all your assets in one time (but you can break it up into several transactions).</li>
 <li>When the liquidity available on the target chain is lower than your account balance, you cannot transfer all your assets in one time. In this case, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a> under this condition.</li>
 </ol>

@@ -1,6 +1,6 @@
 <h1 align="center">Build New Bridges</h1>
 
-Besides building a new chain, you may want to join Poly Network by connecting with Poly Bridge or integrating the [APIs](bridge.md) provided by Poly Bridge into your own cross-chain bridge.
+Besides building a new chain, you may want to join Poly Network by connecting with Poly Bridge or integrating the [APIs](bridge.md) provided by Poly Network into your own cross-chain bridge.
 
 If this describes your intention, the following information will be of service to you.
 

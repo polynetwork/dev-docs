@@ -1,6 +1,6 @@
 <h1 align="center">Importing Tokens</h1>
 
-To import tokens, there are four steps to follow which are listed below.
+To import tokens, there are four steps to follow:
 
 
 ### Step1. Asset deployment
