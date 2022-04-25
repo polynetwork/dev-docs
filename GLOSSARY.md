@@ -2,8 +2,8 @@
 
 A relayer is a cross-chain information porter that performs some of the most critical cross-chain operations. It acts as the medium of interaction between the side chain and the outside world.
 
-Each chain in the cross-chain ecosystem has a relayer associated with it. A relayer monitors its corresponding chain network for cross-chain transactions and forwards detected block headers to the Poly chain, motivated by incentives which it receives in the process.
-Simultaneously, a relayer monitors cross-chain transactions taking place on the Poly chain and transfers them to the respective side chain.
+Each chain in the cross-chain ecosystem has a relayer associated with it. A relayer monitors its corresponding chain network for cross-chain transactions and forwards detected block headers to Poly Chain, motivated by incentives which it receives in the process.
+Simultaneously, a relayer monitors cross-chain transactions taking place on the Poly Chain and transfers them to the respective side chain.
 
 ## CCD
 It is the abbreviation of Cross Chain Data contracts, serving as a database of cross-chain transactions. 
@@ -32,7 +32,7 @@ When we want to issue a new ERC20 token in the Ethereum chain, Ethereum becomes 
 
 ## Poly Chain
 
-The relay chain in the cross-chain ecosystem, a crucial component of the cross-chain ecosystem. The various types of nodes are deployed and maintained by other individuals or organizations and have their own unique governance and trust mechanism. The Poly chain is responsible for connecting them, standardizing cross-chain data flow, interfaces, and verifying the legitimacy of cross-chain data, etc.
+The relay chain in the cross-chain ecosystem, a crucial component of the cross-chain ecosystem. The various types of nodes are deployed and maintained by other individuals or organizations and have their own unique governance and trust mechanism. Poly Chain is responsible for connecting them, standardizing cross-chain data flow, interfaces, and verifying the legitimacy of cross-chain data, etc.
 
 ## Canonical Block
 

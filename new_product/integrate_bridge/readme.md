@@ -11,7 +11,7 @@ If this describes your intention, the following information will be of service t
 
 
 * Link cross-chain events  
-  Poly Bridge links the events monitored from the source chain, Poly chain and target chain depending on the transaction key, and updates the status of the cross-chain transactions simultaneously.
+  Poly Bridge links the events monitored from the source chain, Poly Chain and target chain depending on the transaction key, and updates the status of the cross-chain transactions simultaneously.
 
 
 * Update cross-chain fees  

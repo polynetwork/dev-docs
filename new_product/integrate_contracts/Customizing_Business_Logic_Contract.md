@@ -100,7 +100,7 @@ function lock(address fromAssetHash, uint64 toChainId, bytes memory toAddress, u
 ### Step3. Executing on target chain
 
 A method is required to parse and execute the transaction information transferred by `verifyHeaderAndExecuteTx` in [CCM contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManager.sol). 
-The `verifyHeaderAndExecuteTx` function verifies the **legality** of the cross-chain transaction information, and passes the parsed transaction data from Poly chain to the business logic contract. 
+The `verifyHeaderAndExecuteTx` function verifies the **legality** of the cross-chain transaction information, and passes the parsed transaction data from Poly Chain to the business logic contract. 
 The source code of `verifyHeaderAndExecuteTx` is [here](https://dev-docs.poly.network/new_chain/side_chain/contracts.html#step4-Verifying & executing).
 
 ````solidity
