@@ -1,4 +1,4 @@
-<h1 align="center">Poly文档语句措辞规范</h1>
+# <h1 align="center">Poly文档语句措辞规范</h1>
 
 ## 标题规范
 
@@ -19,8 +19,8 @@
 
 ## 文件组织规范
 
-### 如何为gitbook页面添加新的文档模块
-1. 在gitbook根目录下新建文件夹并创建对应的markdown文件
+### 如何为Gitbook页面添加新的文档模块
+1. 在Gitbook根目录下新建文件夹并创建对应的markdown文件
 2. 修改根目录下的summary.md文件，添加对应的标题以及链接，添加的标题要和文件本身的大标题一致
 
 ### 图片路径
@@ -30,14 +30,14 @@
 
 ## 中文名词翻译表
 
-| 中文名词        | 英文名词              |
-| --------------- |-------------------|
-| 中继链          | Poly Chain        |
-| 要接入的侧链/新 | New Chain         |
-| 源链            | Source chain      |
-| 目标链          | Target Chain      |
-| 开发团队        | `Poly team`         |
-| 上新的token     | Import new tokens |
-| 接入新链        | Connect New Chain |
-|                 |                   |
+| 中文名词       | 英文名词              |
+|------------|-------------------|
+| 中继链        | Poly Chain        |
+| 要接入的侧链/新   | New Chain         |
+| 源链         | Source chain      |
+| 目标链        | Target Chain      |
+| 开发团队       | `Poly team`       |
+| 上新的token   | Import new tokens |
+| 接入新链       | Connect New Chain |
+|            |                   |
 
