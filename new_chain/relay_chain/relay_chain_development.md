@@ -31,7 +31,7 @@ There are four steps to be implemented for the verification method.
 
 ### Step1. Adding a router for your chain
 
-When importing your chain to Poly Chain, the first thing you need to do is to add a router for your chain in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/utils/params.go#L43). 
+When importing your chain to Poly Chain, you should firstly add a router for your chain in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/utils/params.go#L43). 
 
 ### Step2 Implementing the interface of block header synchronization
 
@@ -55,7 +55,7 @@ type HeaderSyncHandler interface {
 
 ### Step3. Implementing the interface of cross chain management
 
-- First, corresponding handler is needed to be add in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/cross_chain_manager/entrance.go#L61).
+- First, corresponding handler should be added in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/cross_chain_manager/entrance.go#L61).
 - Second, implement the method for the interface of ChainHandler, as shown in follows:
 
 ```go
@@ -118,9 +118,9 @@ func VerifyMerkleProof(ethProof *ETHProof, blockData *eth.Header, contractAddr [
 The final step to import your chain is to register your chain in Poly Chain and synchronize zion genesis header to your chain. 
 There are two methods required, as shown in follows:
 
-| Method                    | Description                                                                                                                                                                                                                                                        |
-|---------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Method                    | Description                                                                                                                                                                                                                                                          |
+|---------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **RegisterSideChain**     | This method is used to register your chain in Poly Chain. Please refer to the code for more details.. Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/035b7fadee297e6e1b5a0b3dcde80f22442d8fb1/cmd/tools/run.go#L1765) for more details. |
-| **SyncPolyGenesisHeader** | This method is used to achieve two-way synchronization of genesis block headers between Poly Chain and your chain. Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/master/cmd/tools/run.go#L607) for more details.                      |
+| **SyncPolyGenesisHeader** | This method is used to achieve two-way synchronization of genesis block headers between Poly Chain and your chain. Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/master/cmd/tools/run.go#L607) for more details.                       |
 
 Now, the development for Poly Chain is completed.

@@ -24,8 +24,11 @@ Q1: What is Poly Network?
    </div>
    <div id="collapse31" class="collapse" aria-labelledby="heading31">
     <div class="card-body">
-A: Poly Network is the world’s leading cross-chain interoperability protocol for heterogeneous chains, enhancing connections between ledgers by providing interoperability in Web 3.0. Its uniquely designed cross-chain bridge technology executes cross-chain transactions by deploying smart contracts on the source chain and enabling communication between heterogeneous chains, including the more popular public chains, right at the protocol layer.
-Poly Network has integrated over 18 blockchains, including Ethereum, BNB Chain, Polygon, Avalanche, Fantom, Arbitrum, Optimism,Metis, Boba, OEC, HECO, Neo, Ontology, Zilliqa,Gnosis Chain and etc.
+A: Poly Network is the world’s leading cross-chain interoperability protocol for heterogeneous chains, enhancing connections between ledgers by providing Web 3.0 interoperability. 
+Its uniquely designed cross-chain bridge technology executes cross-chain transactions by deploying smart contracts on the source chain. 
+This enables communication between heterogeneous chains, including the most popular public chains, right at the protocol layer.
+
+Poly Network has integrated over 20 blockchains, including Ethereum, BNB Chain, Polygon, Avalanche, Fantom, Arbitrum, Optimism, Metis, Boba, OKC, HECO, Neo, Ontology, Zilliqa, Gnosis Chain, etc.
 </div>
     </div>
   </div>
@@ -58,7 +61,8 @@ Q1: What is Poly Bridge? What functions does it provide? Where is the website?
    </div>
    <div id="collapse7" class="collapse" aria-labelledby="heading7">
     <div class="card-body">
-A: Poly Bridge is a bridge through which you can easily and quickly transfer your asset (including tokens and NFTs) between different chains.
+
+A: [Poly Bridge](https://bridge.poly.network/) is a bridge through which you can easily and quickly transfer your asset (including tokens and NFTs) between different chains.
       </div>
     </div>
   </div>
@@ -92,8 +96,8 @@ Q1: How to integrate tokens onto Poly Bridge?
     <div class="card-body">
 A: 
 <ul>
-   <li>For PC users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction.md">PC User Manual for token Transaction</a>.</li>
-   <li>For MT users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md">MT User Manual for Token Transaction</a>.</li>
+   <li>For PC users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction.md">Token Transaction for PC User</a>.</li>
+   <li>For MT users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md">Token Transaction for Mobile User</a>.</li>
 </ul>     
        </div>
       </div>
@@ -257,12 +261,12 @@ Q9: When an error is shown on my wallet page, what should I do?
    </div>
    <div id="collapse20" class="collapse" aria-labelledby="heading20">
     <div class="card-body">
-A: <li>First, make sure the amount of token which you have approved for the Poly Bridge contract to use is sufficient;</li>
+A: <li>First, make sure the amount of token which you have approved for the Poly Bridge contracts to use is sufficient;</li>
    <li>Second, make sure the amount of native tokens you have is sufficient to cover the gas fee charged both by the source chain and target chain, in addition to the amount you want to transfer.
-If you transfer native tokens: $amount in your wallet ≥ transfer amount + src chain gas fee + target chain gas fee.
-If you transfer non-native tokens: $native token amount in your wallet ≥ src chain gas fee + target chain gas fee.
-For example, if you want to transfer `METIS` from Andromeda to BSC, you have to reserve tokens for fees on both the source chain gas fee and the target chain. The rest is the amount of tokens you can transfer.
-For ease of use, Poly Bridge uses the following:
+       - If you transfer native tokens: $amount in your wallet ≥ transfer amount + src chain gas fee + target chain gas fee.
+       - If you transfer non-native tokens: $native token amount in your wallet ≥ src chain gas fee + target chain gas fee.
+       - For example, if you want to transfer `METIS` from Andromeda to BSC, you have to reserve tokens for fees on both the source chain gas fee and the target chain. The rest is the amount of tokens you can transfer.
+       - For ease of use, Poly Bridge uses the following:
 <ol>
    <li>If the $value of native tokens in your wallet < transfer token amount + src chain gas fee + target chain gas fee, you’ll be informed that the transferable token amount is ZERO and see a WARNING of "insufficient funs" after clicking MAX;</li>
    <li>If $value of native tokens in your wallet > transfer token amount + src chain gas fee + target chain gas fee, the max amount of transferable token = $native token amount in your wallet - target chain gas fee - estimated src chain gas fee. To guarantee a sufficient amount for the transaction fee on src chain, the estimated src chain gas fee may be slightly higher than the actual fee, so that some native tokens will remain in your account after the transaction (i.e., not all the native tokens will be transferred);</li>

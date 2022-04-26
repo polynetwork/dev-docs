@@ -1,4 +1,4 @@
-<h1 align="center">Token Transaction on Mobile Devices</h1>
+<h1 align="center">Token Transaction for Mobile User</h1>
 
 Poly Network has released Poly Bridge version 2.0 recently, significantly optimizing the interface and improving functionality based on 1.0. 
 This user manual serves as a guide for transacting Tokens on the brand new Poly Bridge 2.0 with your mobile devices.

@@ -20,7 +20,7 @@ Here are three steps to assist you in completing the process.
 
 ### Step2. Information submission
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLSfH1VcCAmdtjcQeCFjSXvYw7QS9MtsegzktyNmSvIPZzleSYg/viewform) your NFT information to the Poly Network team.
-- Contact Poly Network via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a>
+- Contact Poly Network via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a>.
 - Waiting for feedback from Poly Network. We'll email you when everything is complete.
 
 ### Step3. Test

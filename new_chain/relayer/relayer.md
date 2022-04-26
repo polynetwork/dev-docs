@@ -82,13 +82,13 @@ The configurations are required when launching relayer:
 
 - Specify roles to enable in `roles.json` and see a [sample](https://github.com/polynetwork/poly-relayer/blob/main/roles.sample.json) here. 
 
-| Roles       | Quantity Demand                | Description                                                                                   |
-|-------------|--------------------------------|-----------------------------------------------------------------------------------------------|
-| HeaderSync  | One or multiple for each chain | Submits chain headers to Poly Chain.                                                          |
-| TxListen    | Only one for each chain        | Observes cross-chain transactions from the source chain and pushes them to the message queue. |
-| TxCommit    | One or multiple for each chain | Consumes the message queue and submits the cross-chain transactions to Poly Chain.            |
-| PolyListen  | Only one for Poly Chain        | Observes cross-chain transactions from Poly Chain and pushes them to the message queue.       |
-| PolyCommit  | One or multiple for Poly Chain | Consumes the message queue and submits the cross-chain transaction to the target chain.       |
+| Roles       | Quantity Demand                | Description                                                                                    |
+|-------------|--------------------------------|------------------------------------------------------------------------------------------------|
+| HeaderSync  | One or multiple for each chain | Submitting chain headers to Poly Chain                                                         |
+| TxListen    | Only one for each chain        | Observing cross-chain transactions from the source chain and pushing them to the message queue |
+| TxCommit    | One or multiple for each chain | Consuming the message queue and submitting the cross-chain transactions to Poly Chain.         |
+| PolyListen  | Only one for Poly Chain        | Observing cross-chain transactions from Poly Chain and pushing them to the message queue.      |
+| PolyCommit  | One or multiple for Poly Chain | Consuming the message queue and submitting the cross-chain transaction to the target chain.    |
 
 
 You are now ready for the relayer, please refer to the chapter [Test and Launch](../../new_chain/launch_and_test/launch.md) for launching details.

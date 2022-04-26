@@ -66,7 +66,7 @@ function initGenesisBlock(bytes memory rawHeader, bytes memory pubKeyList) whenN
 
 - This method should be called initially and can **only** be called **once**. For the input data `rawHeader`, the `nextbookkeeper` can not be empty.
 - Firstly, this function checks the **public key** of the current epoch to make sure that the CCM contract is uninitialized.
-- Next, the raw header is parsed to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, the validity of the signature can be verified.
+- Next, the raw header is parsed to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from `pubKeyList`, the validity of the signature can be verified.
 - After verifying the signature, we can record the current epoch start height and the public keys by storing them in the address format. And then emit the event `InitGenesisBlockEvent`.
 
 ### Step2. Changing consensus validator
@@ -116,7 +116,7 @@ function changeBookKeeper(bytes memory rawHeader, bytes memory pubKeyList, bytes
 
 - Firstly, you need to make sure the `rawHeader.height` is higher than the recorded current epoch starts height.
 - Then you need to ensure that the `rawHeader` is the key header, including info of switching consensus peers by containing a non-empty `nextBookKeeper` field.
-- Analogous to `initGenesisBlock()`, we also need to parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, we can verify the validity of the signature.
+- Analogous to `initGenesisBlock()`, we also need to parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from `pubKeyList`, we can verify the validity of the signature.
 - After verifying the signature, we can record the current epoch start height and current epoch consensus peers bookkeepers by storing them in the address format. And then emit the event `ChangeBookKeeperEvent`.
 
 ### Step3. Pushing transactions
@@ -282,11 +282,15 @@ function _executeCrossChainTx(address _toContract, bytes memory _method, bytes m
 
 To guarantee the safety of the CCM contract, we keep **whitelists** of contract addresses and methods to prevent invalid calls. Meanwhile, we also set `whiteLister` to manage these whitelists of the CCM contract.
 
-Here is the [template](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol#41) for adding a whitelist. We highly encourage developers to develop similar features of authority management in personal projects. 
+Here is the [template](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol#41) for adding a whitelist. 
+We highly encourage developers to develop similar features of authority management in personal projects. 
 
 ## 3. Developing CCD Module
 
-As mentioned above, CCD is functioned as storing and catching data of CCM. You can take different methods to realize CCM module for different chains according to your actual needs. In general, Poly Network team deploys the CCD contract separately for the CCD module, but you can also realize the module by deploying an integrated contracts.  See the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol) for the specifics.  
+As mentioned above, CCD is functioned as storing and catching data of CCM. 
+You can take different methods to realize CCM module for different chains according to your actual needs. 
+In general, Poly Network team deploys the CCD contract separately for the CCD module, but you can also realize the module by deploying an integrated contracts.
+See the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol) for the specifics.  
 
 ## 4. Developing CCMP Module
 
