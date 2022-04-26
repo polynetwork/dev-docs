@@ -1,4 +1,4 @@
-<h1 align="center">Import Tokens</h1>
+<h1 align="center">Import Token</h1>
 
 To import tokens, there are four steps to follow:
 
