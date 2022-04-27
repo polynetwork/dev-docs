@@ -1,6 +1,6 @@
 <h1 align="center">FAQ</h1>
 
-Though not exhaustive, these FAQs will help you get started and troubleshoot some of the most common problems users have when using Poly Bridge.
+Though not exhaustive, these FAQs will help you get started and troubleshoot some of the most common user problems when using Poly Bridge.
 
 ## Stay Tuned with Us:
 - Official site：https://www.poly.network/
@@ -60,8 +60,7 @@ Q1: What is Poly Bridge? What functions does it provide? Where is the website?
    </div>
    <div id="collapse7" class="collapse" aria-labelledby="heading7">
     <div class="card-body">
-
-A: [Poly Bridge](https://bridge.poly.network/) is a bridge through which you can easily and quickly transfer your asset (including tokens and NFTs) between different chains.
+A: <a href="https://bridge.poly.network/">Poly Bridge</a> is a bridge through which you can easily and quickly transfer your asset (including tokens and NFTs) between different chains.
       </div>
     </div>
   </div>
@@ -93,7 +92,7 @@ Q1: How to integrate tokens onto Poly Bridge?
    </div>
    <div id="collapse9" class="collapse" aria-labelledby="heading9">
     <div class="card-body">
-A: Please refer to the guideline <a href="../new_product/integrate_assets/token.md">Import Token</a>.
+A: Please refer to the guideline <a href="../new_product/integrate_assets/token.md">"Import Token"</a>.
        </div>
       </div>
      </div>
@@ -158,7 +157,7 @@ Q3: How much is the fee that Poly Bridge charges per transaction?
    </div>
    <div id="collapse14" class="collapse" aria-labelledby="heading14">
     <div class="card-body">
-A: The fee for transfering assets is collected according to the cross-chain transaction and is used  to cover the gas fee charged by your target chain. Poly Bridge doesn't charge any additional fees.
+A: The fee for transferring assets is collected according to the cross-chain transaction and is used  to cover the gas fee charged by your target chain. Poly Bridge doesn't charge any additional fees.
       </div>
     </div>
   </div>
@@ -174,7 +173,7 @@ Q4: Is the bridge rate 1:1?
    </div>
    <div id="collapse15" class="collapse" aria-labelledby="heading15">
     <div class="card-body">
-A: Normally yes, with the exception of deflationary tokens.
+A: Normally yes, except for deflationary tokens.
     </div>
     </div>
   </div>
@@ -207,8 +206,8 @@ Q6：I have waited a long time and still haven’t received my asset. What can I
     <div class="card-body">
 A: Please check which step of the transaction process your transfer has reached. Solutions vary accordingly：
 <ul>
- <li>The transaction hasn't been completed on the source chain：For safety reasons, Poly Bridge will not confirm your transaction immediately until subsequent blocks have been confirmed (the number of subsequent blocks is different for different chains), please wait for block confirmation.</li>
- <li>The transaction has been completed on the source chain, but not completed on Poly: if the transaction has been stuck in this step for over 5 min, please do not hesitate to contact the Poly Network Team.</li>
+ <li>The transaction hasn't been completed on the source chain：for safety reasons, Poly Bridge will not confirm your transaction immediately until subsequent blocks have been confirmed (the number of subsequent blocks is different for different chains), please wait for block confirmation.</li>
+ <li>The transaction has been completed on the source chain, but not completed on Poly: if the transaction has been stuck in this step for over 5 min, please do not hesitate to contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
  <li>The transaction hasn't been completed on the target chain: it’s perhaps down to the transaction congestion of the target chain, please wait for a while or refer to the accelerating transaction <a href="../Core_Smart_Contract/User_Manuals/Transaction_Acceleration.md">tutorial</a>. If the accelerated tutorial doesn't help you, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
 </ul>
 </div>
@@ -256,18 +255,19 @@ Q9: When an error is shown on my wallet page, what should I do?
    </div>
    <div id="collapse20" class="collapse" aria-labelledby="heading20">
     <div class="card-body">
-A: <li>First, make sure the amount of token which you have approved for the Poly Bridge contracts to use is sufficient;</li>
-   <li>Second, make sure the amount of native tokens you have is sufficient to cover the gas fee charged both by the source chain and target chain, in addition to the amount you want to transfer.
+A: <li>First, make sure you have approved enough amount for Poly Bridge contract to use the token;</li>
+   <li>Second, make sure you have sufficient native tokens to cover the gas fee charged both by source chain and target chain and the amount you want to transfer:
    <ol>
        <li>If you transfer native tokens: $amount in your wallet ≥ transfer amount + src chain gas fee + target chain gas fee.</li>   
        <li>If you transfer non-native tokens: $native token amount in your wallet ≥ src chain gas fee + target chain gas fee.</li>
        <li>For example, if you want to transfer METIS from Andromeda to BSC, you have to reserve tokens for fees on both the source chain gas fee and the target chain. The rest is the amount of tokens you can transfer.</li>
    </ol>    
-For ease of use, Poly Bridge uses the following:
+For ease of use, Poly Bridge set as follows:
 
 <ol>
-   <li>If the $value of native tokens in your wallet < transfer token amount + src chain gas fee + target chain gas fee, you’ll be informed that the transferable token amount is ZERO and see a WARNING of "insufficient funs" after clicking MAX;</li>
-   <li>If $value of native tokens in your wallet > transfer token amount + src chain gas fee + target chain gas fee, the max amount of transferable token = $native token amount in your wallet - target chain gas fee - estimated src chain gas fee. <br>To guarantee a sufficient amount for the transaction fee on src chain, the estimated src chain gas fee may be slightly higher than the actual fee, so that some native tokens will remain in your account after the transaction (i.e., not all the native tokens will be transferred);</li>
+   <li>If the $native token amount in your wallet < transfer token amount + src chain gas fee + target chain gas fee, you’ll be informed that the transferable token amount is ZERO and see a WARNING of "insufficient funds" after clicking MAX;</li>
+   <li>If the $native token amount in your wallet > transfer token amount + src chain gas fee + target chain gas fee, the max amount of transferable token = $native token amount in your wallet - target chain gas fee - estimated src chain gas fee. 
+   <br>To guarantee the sufficient transaction fee on src chain, the estimated src chain gas fee could be slightly higher than the actual fee, so that some native tokens will remain in your account after transaction (i.e., native token won’t be totally transferred);</li>
 </ol>
    </li>
 <li>Thirdly, if you encounter other types of error, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>.</li>
@@ -285,11 +285,11 @@ Q10: When I click MAX, why is the amount of transferable tokens lower than my ov
    </div>
    <div id="collapse21" class="collapse" aria-labelledby="heading21">
     <div class="card-body">
-A: This is a result of the following three conditions:
+A: Here are three conditions:
 <ol>
 <li>Poly Bridge reserves transaction fees for both src chain and target chain for users (Tips: the fee will be reserved only when the transferred token is a native token). So, the transferable token amount doesn't equal to your account balance.</li>
-<li>Some tokens have their own characteristics that limit the transfer amount, so you may not be able to transfer all your assets in one time (but you can break it up into several transactions).</li>
-<li>When the liquidity available on the target chain is lower than your account balance, you cannot transfer all your assets in one time. In this case, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a> under this condition.</li>
+<li>Some tokens have their own characteristics that limit the transfer amount, so you may not be able to transfer all your assets in one time (but you can break it into several times).</li>
+<li>When the liquidity available on the target chain is lower than your account balance, you cannot transfer all your assets in one time. Please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a> under this condition.</li>
 </ol>
       </div>
     </div>
@@ -307,7 +307,7 @@ after the transaction on the source chain is completed, the transaction on the t
    </div>
    <div id="collapse22" class="collapse" aria-labelledby="heading22">
     <div class="card-body">
-A: <li>The liquidity shown in "Max available amount" refers to the liquidity availbale for all users, not your share of the liquidity. If there are several users initiating large transactions at the same time, the liquidity might be insufficient for all transactions.</li>
+A: <li>The liquidity shown in "Max available amount" refers to the liquidity available for all users, not your share of the liquidity. If there are several users initiating large transactions at the same time, the liquidity might be insufficient for all transactions.</li>
 <li>It happens mostly when the amount you transfer is close to the max available amount. Under this circumstance, Poly Network will contact the relevant project to get them to add liquidity as soon as possible.</li>
       </div>
     </div>
@@ -393,7 +393,7 @@ Q16: If I have not applied Poly Bridge frontend to process my transactions and c
    <div id="collapse27" class="collapse" aria-labelledby="heading27">
     <div class="card-body">
 A: <ul>
-<li>First, please ensure the fee you have paid fee to Poly Bridge is sufficient. You can check this by calling the "get fee" api. If the fee paid is insufficient, it is recommendeded that you use the acceleration function to speed up the target chain transaction.</li>
+<li>First, please make sure you have paid enough fee to Poly Bridge. You can check this by calling the "get fee" API. If the fee paid is insufficient, it is recommended that you use the acceleration function to speed up the target chain transaction.</li>
 <li>Second, if the fee you have paid is sufficient or you have tried to use the accelerate function but the transaction still fails, please contact the <a href="https://discord.com/invite/y6MuEnq">Poly Network team</a>. </li>
 </ul>
       </div>
