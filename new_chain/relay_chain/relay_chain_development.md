@@ -12,7 +12,7 @@ The tutorial below will describe how to implement this method in detail.
 
 ## 1. Prerequisites
 
-There are three prerequisites to verify by synchronizing block headers.
+There are three prerequisites to verify by synchronizing block headers:
 
 - Your chain must support light client verification, like Simple Payment Verification (SPV) protocol in Bitcoin or Light Ethereum Subprotocol (LES) in Ethereum, which means the block header must contain the following information：
 

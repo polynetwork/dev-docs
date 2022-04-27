@@ -3,28 +3,28 @@
 # [MainNet](Chain_ID.md#MainNet_Chain_ID)|[TestNet](Chain_ID.md#TestNet_Chain_ID)|[DevNet](Chain_ID.md#DevNet_Chain_ID)
 
 ## MainNet Chain ID <a id="MainNet_Chain_ID"></a>
- | Type        | Router Number | Chain ID |
-|-------------|---------------|----------|
-| Bitcoin     | 1             | 1        |
-| Ethereum    | 2             | 2        |
- | Ontology    | 3             | 3        |
-| Neo Legacy  | 4             | 4        |
-| Switcheo    | 5             | 5        |
-| BSC         | 6             | 6        |
-| Heco        | 7             | 7        |
-| Palette     | 8             | 8        |
-| Zilliqa     | 17            | 18       |
-| Curve       | 10            | 10       |
-| OKExChain   | 12            | 12       |
-| Neo N3      | 14            | 14       |
-| Heimdall    | 15            | 15       |
-| Polygon     | 16            | 17       |
-| Arbitrum    | 0             | 19       |
-| xDAI        | 0             | 20       |
-| Avalanche   | 0             | 21       |
- | Fantom      | 0             | 22       |
- | Optimistic  | 0             | 23       |
-| Metis       | 0             | 24       |
+ |     Type     |  Router Number  |  Chain ID  |
+|:------------:|:---------------:|:----------:|
+|   Bitcoin    |        1        |     1      |
+|   Ethereum   |        2        |     2      |
+ |   Ontology   |        3        |     3      |
+|  Neo Legacy  |        4        |     4      |
+|   Switcheo   |        5        |     5      |
+|     BSC      |        6        |     6      |
+|     Heco     |        7        |     7      |
+|   Palette    |        8        |     8      |
+|   Zilliqa    |       17        |     18     |
+|    Curve     |       10        |     10     |
+|  OKExChain   |       12        |     12     |
+|    Neo N3    |       14        |     14     |
+|   Heimdall   |       15        |     15     |
+|   Polygon    |       16        |     17     |
+|   Arbitrum   |        0        |     19     |
+|     xDAI     |        0        |     20     |
+|  Avalanche   |        0        |     21     |
+ |    Fantom    |        0        |     22     |
+ |  Optimistic  |        0        |     23     |
+|    Metis     |        0        |     24     |
 ###### [Back to top](Chain_ID.md#menu)
 
 ## TestNet Chain ID <a id="TestNet_Chain_ID"></a>
@@ -58,16 +58,16 @@
 ###### [Back to top](Chain_ID.md#menu)
 
 ## DevNet Chain ID <a id="DevNet_Chain_ID"></a>
-| Type        | Router Number  | Chain ID   |
-|-------------|----------------|------------|
-| Bitcoin     | 1              | 1          |
-| Ethereum    | 2              | 2          |
-| Ontology    | 3              | 3          |
-| NEO Legacy  | 217            | 217        |
-| NEO N3      | 220            | 220        |
-| Cosmos-gaia | 5              | 8          |
-| Switcheo    | 5              | 182        |
-| Pixie       | 19             | 321        |
+|     Type      |  Router Number   |   Chain ID   |
+|:-------------:|:----------------:|:------------:|
+|    Bitcoin    |        1         |      1       |
+|   Ethereum    |        2         |      2       |
+|   Ontology    |        3         |      3       |
+|  NEO Legacy   |       217        |     217      |
+|    NEO N3     |       220        |     220      |
+|  Cosmos-gaia  |        5         |      8       |
+|   Switcheo    |        5         |     182      |
+|     Pixie     |        19        |     321      |
 ###### [Back to top](Chain_ID.md#menu)
 
 
