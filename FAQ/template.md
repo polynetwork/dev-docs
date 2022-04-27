@@ -93,11 +93,7 @@ Q1: How to integrate tokens onto Poly Bridge?
    </div>
    <div id="collapse9" class="collapse" aria-labelledby="heading9">
     <div class="card-body">
-A: 
-<ul>
-   <li>For PC users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction.md">Token Transaction for PC User</a>.</li>
-   <li>For MT users, please refer to <a href="../Core_Smart_Contract/User_Manuals/Token_Transaction_MT.md">Token Transaction for Mobile User</a>.</li>
-</ul>     
+A: Please refer to the guideline <a href="../new_product/integrate_assets/token.md">Import Token</a>.
        </div>
       </div>
      </div>
