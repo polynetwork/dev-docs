@@ -51,6 +51,35 @@
 <div align=center><img src="your_image_path.png" alt=""/></div>
 ```
 
+### 图片并排
+
+```
+<table><tr>
+<td><img src=your_image.png border=0></td>   \\图片路径设置参考“Wording”
+<td><img src=your_image.png border=0></td>
+</tr></table>
+
+```
+
+### 插入视频
+
+```
+<html>
+<body>
+
+<video width="800" height="480" controls="controls">
+  <source src="your video.mp4" type="video/mp4">     \\视频路径设置参考“Wording”
+  <object data="your video.mp4" width="800" height="480">
+    <embed width="800" height="480" src="your video.swf">
+  </object>
+
+</video>
+
+</body>
+</html>
+
+```
+
 ### 插入代码
 \```go
 Your Code Line1
@@ -92,10 +121,12 @@ Please refer to the [code](https://github.com/polynetwork/poly/blob/4323af5cfcd2
 
 ```markdown
 
-| 列标题1               | 列标题2    |
-|--------------------|-------------|
-| **表格内容**           | 表格内容 |
-| **表格内容**           | 表格内容 |
+| 列标题1  | 列标题2  |
+|-------|-------|
+| 表格内容  | 表格内容  |
+| 表格内容  | 表格内容  |
 
 ```
+
+
 

@@ -44,7 +44,7 @@ contract LockProxy is Ownable {
 A method is required to invoke the `crossChain` function in the CCM, i.e., to initiate a cross-chain transaction. The source code of `crossChain` is [here](https://dev-docs.poly.network/new_chain/side_chain/contracts.html#step3-pushing-transactions).
 
 
-````solidity
+```solidity
 /*  
  *  @param toChainId              The target chain id
  *  @param toAddress              The address in bytes format to receive the same amount of tokens in the target chain
@@ -53,7 +53,7 @@ A method is required to invoke the `crossChain` function in the CCM, i.e., to in
  *  @return                       true or false 
 */
 function crossChain (uint64 toChainId, bytes calldata toContract, bytes calldata method, bytes calldata txData) whenNotPaused external returns (bool);
-````
+```
 
 #### Example:
 
@@ -99,7 +99,9 @@ function lock(address fromAssetHash, uint64 toChainId, bytes memory toAddress, u
 
 ### Step3. Executing on target chain
 
-A methods is required to parse and execut the transaction information transferred by `verifyHeaderAndExecuteTx` in [CCM contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManager.sol). The `verifyHeaderAndExecuteTx` function verifies the **legality** of the cross-chain transaction information, and passes the parsed transaction data from Poly chain to the business logic contract. The source code of `verifyHeaderAndExecuteTx` is [here](https://dev-docs.poly.network/new_chain/side_chain/contracts.html#step4-Verifying & executing).
+A method is required to parse and execute the transaction information transferred by `verifyHeaderAndExecuteTx` in [CCM contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManager.sol). 
+The `verifyHeaderAndExecuteTx` function verifies the **legality** of the cross-chain transaction information, and passes the parsed transaction data from Poly Chain to the business logic contract. 
+The source code of `verifyHeaderAndExecuteTx` is [here](https://dev-docs.poly.network/new_chain/side_chain/contracts.html#step4-Verifying & executing).
 
 ````solidity
 /*  
@@ -114,13 +116,13 @@ A methods is required to parse and execut the transaction information transferre
 function verifyHeaderAndExecuteTx (bytes memory proof, bytes memory rawHeader, bytes memory headerProof, bytes memory curRawHeader, bytes memory headerSig) whenNotPaused public returns (bool);
 ````
 
-- The customized method shoud be conformed to the format called by `verifyHeaderAndExecuteTx`, see following:
-````solidity
+- The customized method should be conformed to the format called by `verifyHeaderAndExecuteTx`, as shown in follows:
+
+```solidity
  // The returnData will be bytes32, the last byte must be 01;
 (success, returnData) = _toContract.call(abi.encodePacked(bytes4(keccak256(abi.encodePacked(_method, "(bytes,bytes,uint64)"))), abi.encode(_args, _fromContractAddr, _fromChainId)))
 
-````
-
+```
 
 #### Example:
 
@@ -151,8 +153,8 @@ function unlock(bytes memory argsBs, bytes memory fromContractAddr, uint64 fromC
 ```
 
 - The mapping relationship of business logic contracts needs to be checked in `proxyHashMap`.
-- The function `unlock` is used to deserialize and excute the transaction data `argsBs`, i.e., to transfer a certain amount of token to the target address on the target chain.
-- For safety, the function `unlock` only can be called by the [CCM contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManager.sol). In this case, the modifier `onlyManagerContract` restricts the calling authority by obtaining the CCM contract address of CCM in CCMP contract. While the function `setManagerProxy` is uesd to set the [CCMP contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManagerProxy.sol) address. See following:
+- The function `unlock` is used to deserialize and execute the transaction data `argsBs`, i.e., to transfer a certain amount of token to the target address on the target chain.
+- For safety, the function `unlock` only can be called by the [CCM contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManager.sol). In this case, the modifier `onlyManagerContract` restricts the calling authority by obtaining the CCM contract address of CCM in CCMP contract. While the function `setManagerProxy` is used to set the [CCMP contract](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/interface/IEthCrossChainManagerProxy.sol) address, as shown in follows:
 
 ```solidity
     modifier onlyManagerContract() {

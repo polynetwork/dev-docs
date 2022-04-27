@@ -1,6 +1,6 @@
 <h1 align="center">Build New Bridges</h1>
 
-Besides building a new chain, you may want to join the Poly cross-chain ecosystem by connecting with Poly Bridge or integrating the [APIs](bridge.md) provided by Poly Bridge into your own cross-chain bridge.
+Besides building a new chain, you may want to join Poly Network by connecting with Poly Bridge or integrating the [APIs](bridge.md) provided by Poly Network into your own cross-chain bridge.
 
 If this describes your intention, the following information will be of service to you.
 
@@ -11,7 +11,7 @@ If this describes your intention, the following information will be of service t
 
 
 * Link cross-chain events  
-  Poly Bridge links the events monitored from the source chain, Poly chain and target chain depending on the transaction key, and updates the status of the cross-chain transactions simultaneously.
+  Poly Bridge links the events monitored from the source chain, Poly Chain and target chain depending on the transaction key, and updates the status of the cross-chain transactions simultaneously.
 
 
 * Update cross-chain fees  

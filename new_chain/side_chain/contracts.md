@@ -26,13 +26,13 @@ In general, cross-chain contracts are sorted into **logic**, **data**, and **pro
 
 <div align=center><img src="resources/contracts_interaction.png" alt=""/></div>
 
-## 2. Developing CCM Contracts
+## 2. Developing CCM Module
 
 The following four features are the core functions of CCM contracts and must be implemented.
 
 ### Step1. Synchronizing genesis block header
 
-This step is meant to implement the methods of synchronizing the genesis block header of the Poly chain to the CCM contract. 
+This step is meant to implement the methods of synchronizing the genesis block header of Poly Chain to the CCM contract. 
 
 #### Example:
 
@@ -66,12 +66,12 @@ function initGenesisBlock(bytes memory rawHeader, bytes memory pubKeyList) whenN
 
 - This method should be called initially and can **only** be called **once**. For the input data `rawHeader`, the `nextbookkeeper` can not be empty.
 - Firstly, this function checks the **public key** of the current epoch to make sure that the CCM contract is uninitialized.
-- Next, the raw header is parsed to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, the validity of the signature can be verified.
+- Next, the raw header is parsed to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from `pubKeyList`, the validity of the signature can be verified.
 - After verifying the signature, we can record the current epoch start height and the public keys by storing them in the address format. And then emit the event `InitGenesisBlockEvent`.
 
 ### Step2. Changing consensus validator
 
-This step is meant to implement the methods of changing the Poly Chain consensus validator, which is called `BookKeeper` in the code. 
+This step is meant to implement the methods of changing Poly Chain consensus validator, which is called `BookKeeper` in the code. 
 
 #### Example:
 
@@ -116,12 +116,12 @@ function changeBookKeeper(bytes memory rawHeader, bytes memory pubKeyList, bytes
 
 - Firstly, you need to make sure the `rawHeader.height` is higher than the recorded current epoch starts height.
 - Then you need to ensure that the `rawHeader` is the key header, including info of switching consensus peers by containing a non-empty `nextBookKeeper` field.
-- Analogous to `initGenesisBlock()`, we also need to parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from pubKeyList, we can verify the validity of the signature.
+- Analogous to `initGenesisBlock()`, we also need to parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from `pubKeyList`, we can verify the validity of the signature.
 - After verifying the signature, we can record the current epoch start height and current epoch consensus peers bookkeepers by storing them in the address format. And then emit the event `ChangeBookKeeperEvent`.
 
 ### Step3. Pushing transactions
 
-This step is meant to implement the methods of pushing the serialized cross-chain transaction information to the Poly chain.
+This step is meant to implement the methods of pushing the serialized cross-chain transaction information to Poly Chain.
 
 #### Example:
 
@@ -270,7 +270,7 @@ function _executeCrossChainTx(address _toContract, bytes memory _method, bytes m
 
 - The relayer should invoke this method. In some circumstances, users can invoke this method by themselves if they get the valid block information from Poly.
 - This method fetches and processes **cross-chain transactions**, finds the **Merkle root of a transaction** based on the block height (in the block header), and verifies the **transaction's legitimacy** using the transaction parameters.
-- After verifying the Poly chain block header and proof, you still need to check if the parameters `toContract` and `toMerkleValue.makeTxParam.method` have been listed in whitelists.
+- After verifying Poly Chain block header and proof, you still need to check if the parameters `toContract` and `toMerkleValue.makeTxParam.method` have been listed in whitelists.
 - The business logic contract deployed on the target chain is then invoked, which processes the business logic contract through the internal method `_executeCrossChainTx()`:
     - This method is meant to invoke the target contract and trigger the execution of cross-chain tx on the target chain.
     - Firstly, you need to ensure that the target contract is waiting to invoke a contract rather than a standard account address.
@@ -282,11 +282,15 @@ function _executeCrossChainTx(address _toContract, bytes memory _method, bytes m
 
 To guarantee the safety of the CCM contract, we keep **whitelists** of contract addresses and methods to prevent invalid calls. Meanwhile, we also set `whiteLister` to manage these whitelists of the CCM contract.
 
-Here is the [template](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol#41) for adding a whitelist. We highly encourage developers to develop similar features of authority management in personal projects. 
+Here is the [template](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/logic/EthCrossChainManager.sol#41) for adding a whitelist. 
+We highly encourage developers to develop similar features of authority management in personal projects. 
 
 ## 3. Developing CCD Module
 
-As mentioned above, CCD is functioned as storing and catching data of CCM. You can take different methods to realize CCM module for different chains according to your actual needs. In general, Poly Network team deploys the CCD contract separately for the CCD module, but you can also realize the module by deploying an integrated contracts.  See the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol) for the specifics.  
+As mentioned above, CCD is functioned as storing and catching data of CCM. 
+You can take different methods to realize CCM module for different chains according to your actual needs. 
+In general, Poly Network team deploys the CCD contract separately for the CCD module, but you can also realize the module by deploying an integrated contracts.
+See the [source code](https://github.com/polynetwork/eth-contracts/blob/master/contracts/core/cross_chain_manager/data/EthCrossChainData.sol) for the specifics.  
 
 ## 4. Developing CCMP Module
 
