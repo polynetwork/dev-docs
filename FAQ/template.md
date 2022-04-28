@@ -8,7 +8,7 @@ Though not exhaustive, these FAQs will help you get started and troubleshoot som
 - Twitter: https://twitter.com/PolyNetwork2
 - Medium: https://medium.com/@polynetwork
 - Telegram: https://t.me/polynetworkgroup
-- Discord: https://discord.gg/xXxJa3sm
+- Discord: https://discord.com/invite/y6MuEnq
 - Github: https://github.com/polynetwork
 - User Guides and Tutorials: https://medium.com/poly-network/tagged/tutorial
 
