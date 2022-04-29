@@ -66,7 +66,7 @@ Contract issues can be analyzed according to the step the transaction reached:
 
 
 - If you encounter an error submitting this transaction, there is something wrong with your contract on the target chain. Consider doing the following:
-  - Make sure the "method" (the function of your contract called by target chain) is allowed to be called by the CCM contract on the target chain.
+  - Make sure the "method" (the function of your contract called by target chain) is allowed to be called by CCM contract on the target chain.
   - Check that the txData (one of the input parameters of the cross-chain function) can be parsed correctly by the "method" on the target chain.
 
 

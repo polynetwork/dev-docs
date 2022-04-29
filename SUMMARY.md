@@ -28,8 +28,6 @@
 ----
 ### Appendix
 * [Contracts]()
-  * [CCD](Core_Smart_Contract/Contract/CCD.md)
-  * [CCM](Core_Smart_Contract/Contract/CCM.md)
   * [CCMP](Core_Smart_Contract/Contract/CCMP.md)
   * [LockProxy](Core_Smart_Contract/Contract/LockProxy.md)
   * [NFTLockProxy](Core_Smart_Contract/Contract/NFTLockProxy.md)
