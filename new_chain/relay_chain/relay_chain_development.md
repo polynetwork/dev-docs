@@ -45,10 +45,10 @@ type HeaderSyncHandler interface {
 }
 ```
 
-| Method                | Description                                                  |
-| --------------------- | ------------------------------------------------------------ |
-| **SyncGenesisHeader** | This method stores the initial block header so that the subsequent block headers of blocks containing cross-chain events can be verified and synchronized. This method will only be called for **once** in initializing the new chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L61) for more details. |
-| **SyncBlockHeader**   | This method is used to synchronize block headers consistently from the new chain to Poly Chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L99) for more details. |
+| Method                | Description                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **SyncGenesisHeader** | This method is used to store the initial block header so that the subsequent block headers of blocks containing cross-chain events can be verified and synchronized. This method will only be called for **once** in initializing the new chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L61) for more details.  |
+| **SyncBlockHeader**   | This method is used to synchronize block headers consistently from the new chain to Poly Chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L99) for more details.                                                                                                                                                   |
 | **SyncCrossChainMsg** | This method is used to fetch cross-chain messages. Please refer to the ontology [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/ont/header_sync.go#L106) or eth [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/eth/header_sync.go#L216) for more details. |
 
 
@@ -114,7 +114,7 @@ func VerifyMerkleProof(ethProof *ETHProof, blockData *eth.Header, contractAddr [
 
 ### Step4. Developing for register tool
 
-The final step to import your chain is to register your chain in Poly Chain and synchronize the Zion genesis header to your chain. 
+The final step to import your chain is to register your chain in Poly Chain and synchronize the Poly chain genesis header to your chain. 
 There are two methods required, as shown follows:
 
 | Method                    | Description                                                  |
