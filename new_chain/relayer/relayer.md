@@ -4,10 +4,10 @@
 
 This step shows how to develop a relayer for your chain or project. The relayer plays a role in delivering messages between different chains, which is part of the cross-chain ecosystem. 
 
-There are two components required: **Chain Listener** and **Chain Submitter**. 
+There are two required components: **Chain Listener** and **Chain Submitter**. 
 
 ### 1.1 Chain Listener
-Chain listener fetches data from the source chain and Poly Chain, including block header, cross-chain events emitted from CCM, and Merkle proofs used to verify the cross-chain message in Poly Chain.
+The chain listener fetches data from the source chain and Poly Chain, including the block header, cross-chain events emitted from CCM, and Merkle proofs used to verify the cross-chain messages in Poly Chain.
 The listed interface is necessary.
 
 ```go
@@ -53,23 +53,23 @@ type IChainSubmitter interface {
 ##2. Develop Steps on Poly-Relayer.
 
 Poly-Relayer is a relayer project maintained by Poly Network.
-If you choose to develop based on Poly-Relayer, please follow the listed steps.
+If you choose to develop based on Poly-Relayer, please follow the steps listed below.
 
-### Step1. Prerequisites
+### Step 1. Prerequisites
 The [Poly-Relayer](https://github.com/polynetwork/poly-relayer) project is based on the [bridge-common](https://github.com/polynetwork/bridge-common) library. So you need to:
  - Add chain ID in the `bridge-common` project [here](https://github.com/polynetwork/bridge-common/tree/main/base).
  - Add chain client SDK [here](https://github.com/polynetwork/bridge-common/treemain/chains) for common usage.
  - Add chain wallet [here](https://github.com/polynetwork/bridge-common/tree/main/wallet) for common usage.
 
-### Step2. Interface implementation
+### Step 2. Interface implementation
 Implement interface `IChainListener` and `IChainSubmitter` for the new chain. 
 
-### Step3. Registration 
+### Step 3. Registration 
 Register `ChainListener` and `ChainSubmitter` in [selectors](https://github.com/polynetwork/poly-relayer/blob/main/relayer/relayer.go#L73) located in the `relayer.go` file.
 
 ##3. Preparation for Launch
 
-The configurations are required when launching relayer:
+The configurations are a requirement for launching the relayer:
 
 - Make sure the necessary configuration is specified in `config.json,` including CCM contract, CCD contract, and other details for the chain.
 - You can see a [sample](https://github.com/polynetwork/poly-relayer/blob/main/config.sample.json) here.
