@@ -1,13 +1,13 @@
 <h1 align="center">Develop for Poly Chain</h1>
 
 
-This step shows you how Poly Chain verifies cross-chain transactions from your chain. 
-Verification by synchronizing block headers is the most common method.
+This section serves to explain how Poly Chain verifies cross-chain transactions from your chain. 
+The most common method is verification by synchronizing block headers.
 The tutorial below will describe how to implement this method in detail.
 
 > [!Note|style:flat|label:Notice]
 > If your chain **doesn't** support the method of verification by synchronizing block headers (i.e., your chain fails to meet the prerequisites listed),
-> here are also other solutions,
+> Other solutions for cross-chain verification are also listed in this tutorial,
 > and please contact `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> for more support.
 
 ## 1. Prerequisites
@@ -27,16 +27,16 @@ There are three prerequisites to verify by synchronizing block headers:
 
 ## 2. Development Specifications
 
-There are four steps to be implemented for the verification method. 
+There are four steps to implement for the verification method. 
 
-### Step1. Adding a router for your chain
+### Step 1. Adding a router for your chain
 
 When importing your chain to Poly Chain, you should firstly add a router for your chain in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/utils/params.go#L43). 
 
-### Step2 Implementing the interface of block header synchronization
+### Step 2. Implementing the interface of block header synchronization
 
-- First, corresponding handler should be added in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/entrance.go#L62).
-- Second, implement the method for the interface of HeaderSyncHandler, as shown in follows:
+- First, the corresponding handler should be added in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/entrance.go#L62).
+- Second, implement the method for the interface of HeaderSyncHandler, as shown below:
 
 ```go
 type HeaderSyncHandler interface {
@@ -50,13 +50,13 @@ type HeaderSyncHandler interface {
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **SyncGenesisHeader**   | This method is used to store the initial block header so that the subsequent block headers of blocks that contain cross-chain events can be verified and synchronized. This method will only be called for **once** in initializing the new chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L61) for more details. |
 | **SyncBlockHeader**     | This method is used to synchronize block headers consistently from the new chain to Poly Chain. Please refer to the [code](https://github.com/polynetwork/poly/blob/master/native/service/header_sync/eth/header_sync.go#L99) for more details.                                                                                                                                                    |
-| **SyncCrossChainMsg**   | This method is used to fetch cross chain message. Please refer to the ontology [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/ont/header_sync.go#L106) or eth [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/eth/header_sync.go#L216) for more details.  |
+| **SyncCrossChainMsg**   | This method is used to fetch tge cross chain message. Please refer to the ontology [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/ont/header_sync.go#L106) or eth [code](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/header_sync/eth/header_sync.go#L216) for more details.  |
 
 
-### Step3. Implementing the interface of cross chain management
+### Step 3. Implementing the interface of cross chain management
 
-- First, corresponding handler should be added in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/cross_chain_manager/entrance.go#L61).
-- Second, implement the method for the interface of ChainHandler, as shown in follows:
+- First, the corresponding handler should be added in the [file](https://github.com/polynetwork/poly/blob/ea51f848c3b4284c046ca9bab527869846679640/native/service/cross_chain_manager/entrance.go#L61).
+- Second, implement the method for the interface of ChainHandler, as shown below:
 
 ```go
 type ChainHandler interface {
@@ -113,14 +113,14 @@ func verifyFromEthTx(native *native.NativeService, proof, extra []byte, fromChai
 func VerifyMerkleProof(ethProof *ETHProof, blockData *eth.Header, contractAddr []byte) ([]byte, error) 
 ```
 
-### Step4. Developing for register tool
+### Step 4. Developing for register tool
 
-The final step to import your chain is to register your chain in Poly Chain and synchronize zion genesis header to your chain. 
-There are two methods required, as shown in follows:
+The final step for importing your chain is to register your chain in Poly Chain and synchronize the zion genesis header to your chain. 
+There are two methods for doing this, as shown in the following:
 
 | Method                    | Description                                                                                                                                                                                                                                                          |
 |---------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **RegisterSideChain**     | This method is used to register your chain in Poly Chain. Please refer to the code for more details.. Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/035b7fadee297e6e1b5a0b3dcde80f22442d8fb1/cmd/tools/run.go#L1765) for more details. |
 | **SyncPolyGenesisHeader** | This method is used to achieve two-way synchronization of genesis block headers between Poly Chain and your chain. Please refer to the [code](https://github.com/polynetwork/poly-io-test/blob/master/cmd/tools/run.go#L607) for more details.                       |
 
-Now, the development for Poly Chain is completed.
+Upon completion of the above you have finished the development for Poly Chain.
