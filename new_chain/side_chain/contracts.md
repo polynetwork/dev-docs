@@ -30,7 +30,7 @@ In general, cross-chain contracts are sorted into **logic**, **data**, and **pro
 
 The following four features are the core functions of CCM contracts and must be implemented.
 
-### Step1. Synchronizing genesis block header
+### Step 1. Synchronizing genesis block header
 
 This step is meant to implement the methods of synchronizing the genesis block header of Poly Chain to CCM contract. 
 
@@ -69,7 +69,7 @@ function initGenesisBlock(bytes memory rawHeader, bytes memory pubKeyList) whenN
 - Next, the raw header is parsed to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from `pubKeyList`, the validity of the signature can be verified.
 - After verifying the signature, we can record the current epoch start height and the public keys by storing them in the address format. And then emit the event `InitGenesisBlockEvent`.
 
-### Step2. Changing consensus validator
+### Step 2. Changing consensus validator
 
 This step is meant to implement the methods of changing Poly Chain consensus validator, which is called `BookKeeper` in the code. 
 
@@ -119,7 +119,7 @@ function changeBookKeeper(bytes memory rawHeader, bytes memory pubKeyList, bytes
 - Analogous to `initGenesisBlock()`, we also need to parse the raw header to get the `header.nextBookKeeper`. Comparing it with the `nextBookKeeper` converted from `pubKeyList`, we can verify the validity of the signature.
 - After verifying the signature, we can record the current epoch start height and current epoch consensus peers bookkeepers by storing them in the address format. And then emit the event `ChangeBookKeeperEvent`.
 
-### Step3. Pushing transactions
+### Step 3. Pushing transactions
 
 This step is meant to implement the methods of pushing the serialized cross-chain transaction information to Poly Chain.
 
@@ -170,7 +170,7 @@ function crossChain(uint64 toChainId, bytes calldata toContract, bytes calldata 
 - This method constructs the `rawParam`, which contains **transaction hash**, `msg.sender`, **target chain ID**, **business logic contract** to be invoked on the target chain, the **target method** to be invoked, and the **serialized transaction data** which has been already constructed in the business logic contract.
 - Then the hash of `rawParam` is put into storage, proving the existence of the transaction.
 
-### Step4. Verifying & executing
+### Step 4. Verifying & executing
 
 This step is meant to implement the methods of verifying the block header and Merkle proof. If this verification is passed, the transaction can be executed on the target chain.
 

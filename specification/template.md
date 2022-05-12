@@ -15,15 +15,15 @@
 英文标题markdown代码样例
 ```markdown
 ## Put the Elephants Into Refrigerator
-### Step1. Open the door
+### Step 1. Open the door
 - Make sure space is enough.
 - Clean up a little bit.
 - Be careful.
-### Step2. Put an elephant inside
+### Step 2. Put an elephant inside
 - You should know it's heavy.
 - You may need extra hands.
 - Don't hurt elephants.
-### Step3. Close the door
+### Step 3. Close the door
 - Check if the door is good.
 - Make sure the elephant is alright.
 - Job done.
