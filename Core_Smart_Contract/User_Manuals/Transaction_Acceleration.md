@@ -14,17 +14,17 @@ When you have submitted a cross-chain transaction completed in Poly, click **SPE
 
 Here are four steps listed for you to accelerate your transaction on [Poly Bridge](https://bridge.poly.network/).
 
-### Step1. Transaction selection
+### Step 1. Transaction selection
 Firstly, you should find the transaction that you want to accelerate. Click **History** on [Poly Bridge](https://bridge.poly.network/) to view the previous transaction, as shown in the figure.
 
 ![img_95.png](img_95.png)
 
-### Step2. Status checking
+### Step 2. Status checking
 Then check the status of the transaction and click **Pending**. 
 
 ![img_96.png](img_96.png)
 
-### Step3. Speed-up or fee payment
+### Step 3. Speed-up or fee payment
 Now you can click **SPEED UP** or **PAY** if you didn't pay a gas fee for this transaction shown in the figure.
 
 ![img_97.png](img_97.png)
@@ -40,7 +40,7 @@ Now you can accelerate your transaction by clicking Speed Up or Pay and submitti
 If you encounter an error report as shown in the figure, please do not resubmit this transaction. Turn back to your wallet to check the balance.  
 <img alt="img_30.png" src="img_30.png"/>
 
-### Step4. Accelerating
+### Step 4. Accelerating
 After successfully submitting an accelerated transaction, you'll see a page as below, and please wait for a while.
 
 ![img_98.png](img_98.png)

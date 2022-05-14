@@ -26,14 +26,14 @@ You can either watch the video or follow the manual below.
 </body>
 </html>
 
-### Step1. Wallet and network connection
+### Step 1. Wallet and network connection
 Find the button “Connect Wallet” in the top right corner of this page and connect your wallet of the source chain from which you want to transfer Token. 
 Make sure the network of your wallet stays consistent with that of the source chain you selected. 
 In this example, we have selected BNB as source chain, as shown in the figure:
 ![img_47.png](img_47.png)
 ![img_48.png](img_48.png)
 
-### Step2. Transaction information filling
+### Step 2. Transaction information filling
 Select the Token you want to transfer (in Asset), the source chain (in From), the target chain (in To), and the amount of assets to be traded (in Amount) in order.
 ![img_49.png](img_49.png)
 
@@ -43,13 +43,13 @@ Select the Token you want to transfer (in Asset), the source chain (in From), th
 > Then click “Connect Wallet” to connect the source chain and the target chain wallets. 
 
 
-### Step3. Target chain wallet connection
+### Step 3. Target chain wallet connection
 After filling out the transaction information, click “Connect Wallet”, and then click on the target chain wallet to which you want to transfer Token to.
 ![img_50.png](img_50.png)
 ![img_51.png](img_51.png)
 
 
-### Step4. Transaction information confirmation
+### Step 4. Transaction information confirmation
 After connecting the target chain wallet, click “Next”, check the transaction information (including Token, source chain, target chain, transaction asset and fee) in the pop-up window, and click “Confirm”. 
 Then you need to submit the transaction in your wallet after checking.
 ![img_52.png](img_52.png)
@@ -58,7 +58,7 @@ Then you need to submit the transaction in your wallet after checking.
 > [!Note|style:flat|label:Notice]
 > If this is the first time you interact with Poly Bridge, before transaction submission, an approval is required (Approve Infinity or the amount you literally need).
 
-### Step5. Transaction completion
+### Step 5. Transaction completion
 After the transaction is submitted, the progress of the transaction will be displayed on the page. 
 When all the three stages of the transaction are completed, the transaction is finished.
 ![img_54.png](img_54.png)
@@ -68,7 +68,7 @@ When all the three stages of the transaction are completed, the transaction is f
 > You can close the pop-up window any time during the transaction, and come back to check the transaction status in “history”.
 
 
-### Step6. Result checking
+### Step 6. Result checking
 Click on “history” to view the record of processed transactions. 
 Details of the assigned transaction can be viewed by clicking the status list. 
 For completed transactions, the status is displayed as “Finished”.
