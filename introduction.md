@@ -14,21 +14,49 @@ Poly Network has integrated over 20 blockchains, including Ethereum, BNB Chain, 
 - A Protocol for building your bridges
 - Specifications for customizing business logic contracts
 
-## dApps
+## Poly Network-powered Tools and Services
 
-> @[Token assets cross-chain transfer]{`https://bridge.poly.network/`}
-> `resources/asset.svg` "rect"
-
----
-
-> @[NFT cross-chain transfer]{`https://bridge.poly.network/nft`}
-> `resources/nft.svg` "rect"
+<div align=center><img src="resources/PolyNetwork Supported Chains3.png" alt=""/></div>
 
 ---
 
-> @[Token Swap]{`https://o3swap.com/`}
-> `resources/swap.svg` "rect"
+> @[Poly Bridge]{`https://bridge.poly.network/`}
+> `resources/PolyBridge-Black.png` "rect"
 
+---
+
+> @[ChainSwap]{`https://chainswap.com/`}
+> `resources/chainswap.jpg` "rect"
+
+---
+
+> @[Demex]{`https://dem.exchange/`}
+> `resources/Demex.png` "rect"
+
+---
+
+> @[O3Swap]{`https://o3swap.com/`}
+> `resources/O3Swap.png` "rect"
+
+---
+
+> @[MDEX]{`https://mdex.com/#/`}
+> `resources/Mdex.jpg` "rect"
+
+---
+
+> @[Flamingo]{`https://flamingo.finance/`}
+> `resources/Flamingo.png` "rect"
+
+---
+
+> @[Wing]{`https://wing.finance/`}
+> `resources/Wing.svg` "rect"
+
+---
+
+> @[ZilBridge]{`https://zilswap.io/bridge`}
+> `resources/ZilBridge.png` "rect"
 
 
 ## Join the Community
