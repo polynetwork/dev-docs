@@ -4,7 +4,7 @@
 * [Guidelines for Reading](guideline.md)
 
 ### Development 
-* [Connect New Chains](new_chain/readme.md)
+* [Integrate New Chains](new_chain/readme.md)
   * [Develop for Poly Chain](new_chain/relay_chain/relay_chain_development.md)
   * [Develop for New Chain](new_chain/side_chain/contracts.md)
   * [Develop for Relayer](new_chain/relayer/relayer.md)
