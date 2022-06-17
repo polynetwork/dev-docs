@@ -32,8 +32,8 @@ Make sure the network of your wallet stays consistent with that of the source ch
 In this example, we have selected Polygon as source chain, as shown in the figure:
 
 <table><tr>
-<td><img src=img_73.png border=0></td>
-<td><img src=img_74.png border=0></td>
+<td><img src=1.jpg border=0></td>
+<td><img src=2.jpg border=0></td>
 </tr></table>
 
 
@@ -41,7 +41,7 @@ In this example, we have selected Polygon as source chain, as shown in the figur
 Select the transaction information, including source chain (in From), the NFT asset you want to transfer (in Collection), the NFT item you want to transfer (in Item) and target chain (in To).
 
 <div align="center">
-<img src="img_75.png"></div>
+<img src="3.jpg"></div>
 
 
 > [!Note|style:flat|label:Notice]
@@ -52,8 +52,8 @@ Select the transaction information, including source chain (in From), the NFT as
 After filling out the transaction information, click “Connect Wallet” below, and then click on the target chain wallet to which you want to transfer NFT.
 
 <table><tr>
-<td><img src=img_86.png border=0></td>
-<td><img src=img_77.png border=0></td>
+<td><img src=4.jpg border=0></td>
+<td><img src=5.jpg border=0></td>
 </tr></table>
 
 > [!Note|style:flat|label:Notice]
@@ -64,8 +64,8 @@ Click “Approve”.
 You should check the approved information in your wallet, and then click “Approve”.
 
 <table><tr>
-<td><img src=img_87.png border=0></td>
-<td><img src=img_88.png border=0></td>
+<td><img src=6.jpg border=0></td>
+<td><img src=7.jpg border=0></td>
 </tr></table>
 
 
@@ -74,8 +74,8 @@ Click “Next” and check the transaction information.
 Click “Confirm” in the pop-up window, and click “Confirm” in the wallet to submit the transaction.
 
 <table><tr>
-<td><img src=img_89.png border=0></td>
-<td><img src=img_81.png border=0></td>
+<td><img src=8.jpg border=0></td>
+<td><img src=9.jpg border=0></td>
 </tr></table>
 
 After the transaction is submitted, the transaction progress will be displayed. 
@@ -85,7 +85,7 @@ When all the three transaction stages are completed, the transaction is finished
 > You can close the pop-up window at any time during the process, and check the transaction status in “history”.
 
 <div align="center">
-<img src="img_82.png"></div>
+<img src="10.jpg"></div>
 
 
 ### Step 8. Results checking
@@ -95,8 +95,8 @@ Details of the assigned transaction can be viewed by clicking on the status list
 For completed transactions, the status is displayed as “Finished”.
 
 <table><tr>
-<td><img src=img_83.png border=0></td>
-<td><img src=img_100.png border=0></td>
+<td><img src=11.jpg border=0></td>
+<td><img src=12.jpg border=0></td>
 </tr></table>
 
 Congratulations! 
