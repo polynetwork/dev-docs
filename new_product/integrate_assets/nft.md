@@ -17,6 +17,10 @@ Here are three steps to assist you in completing the process.
   }
   ```
 
+> [!Note|style:flat|label:Notice]
+> The token uri is required not to be empty. 
+> If you have other needs, please contact `Poly team` via <a class="fab fa-discord" href= "https://discord.com/invite/y6MuEnq"></a> for more support.
+
 
 ### Step 2. Information submission
 - [Submit](https://docs.google.com/forms/d/e/1FAIpQLSfH1VcCAmdtjcQeCFjSXvYw7QS9MtsegzktyNmSvIPZzleSYg/viewform) your NFT information to the Poly Network team.
