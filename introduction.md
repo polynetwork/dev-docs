@@ -5,7 +5,7 @@ Its uniquely designed cross-chain bridge technology executes cross-chain transac
 
 Poly Network has integrated over 20 blockchains, including Ethereum, BNB Chain, Polygon, Avalanche, Fantom, Arbitrum, Optimism, Metis, Boba, OKC, HECO, Neo, Ontology, Zilliqa, Gnosis Chain, etc.
 
-<div align=center><img src="resources/Poly-ecosystem.png" alt=""/></div>
+<div align=center><img src="resources/PolyNetwork ecosystem20220927.png" alt=""/></div>
 
 ## Poly Network Provides
 
